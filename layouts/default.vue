@@ -78,7 +78,7 @@
                 <a href="mailto:care@ecolawn.nz" class="ml-3 text-success">care@ecolawn.nz</a>
               </div>
               <div class="d-flex">
-                <b-icon icon="telephone-fill" variant="white"></b-icon>
+                <b-icon icon="house-door-fill" variant="white"></b-icon>
                 <p class="ml-3 mb-0">
                   74B Patiki Road, Rosebank Auckland 1026 (Head office and
                   warehouse – not a showroom)
