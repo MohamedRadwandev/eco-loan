@@ -1,0 +1,81 @@
+$h1-font-size:48;
+$h2-font-size:42;
+$h3-font-size:28;
+$h4-font-size:20;
+$h5-font-size:14;
+$h6-font-size:12;
+$green:#7fb848;
+$blue:#006994;
+$green-400:#FAFFF4;
+$gray-600:#808080;
+$gray-400:#F1F1F1;
+$text-muted:$gray-600;
+$theme-colors: ("dark": #1A1A1A,
+  "white":#fff,
+  "blue" : $blue);
+
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1500px);
+
+
+$font-family-base:'Montserrat',
+sans-serif;
+$font-weight-base:500;
+$enable-responsive-font-sizes: true;
+$btn-border-radius: 8px;
+$border-radius-sm:8px;
+$btn-font-size:14px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+.btn-success{
+  color:#fff;
+}
+.bg-green-400 {
+  background-color: $green-400
+}
+.border-green-400 {
+  border-color: $green-400
+}
+
+.bg-gray-400 {
+  background-color: $gray-400
+}
+.border-gray-400 {
+  border-color: $gray-400
+}
+
+table thead {
+  border-bottom: 1px solid $green;
+}
+
+table thead th {
+  font-size: $h5-font-size + px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.text-transform-none{
+  text-transform: none;
+}
+.line-height-lg{
+  line-height: 24px;
+}
+
+.font-size-24{
+  font-size: 1.5rem;
+}
+
+.cursor-pointer{
+cursor: pointer;
+}
+
+@include media-breakpoint-up(md){
+  .w-md-auto{
+    width: auto !important;
+  }
+}
