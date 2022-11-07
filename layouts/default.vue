@@ -63,7 +63,7 @@
           <b-col cols="12" md="4">
             <p class="h4 mb-5">CONTACT</p>
 
-            <div class="d-flex flex-column mt-5" style="gap:8px">
+            <div class="d-flex flex-column mt-5" style="gap:12px">
               <div class="d-flex">
                 <b-icon icon="telephone-fill" variant="white"></b-icon>
                 <p class="ml-3 mb-0">
@@ -75,7 +75,7 @@
               
               <div class="d-flex">
                 <b-icon icon="envelope-fill" variant="white"></b-icon>
-                <a href="mailto:care@ecolawn.nz" class="ml-3 text-success">care@ecolawn.nz</a>
+                <a href="mailto:care@ecolawn.nz" class="ml-3 text-success" style="line-height: 15px;">care@ecolawn.nz</a>
               </div>
               <div class="d-flex">
                 <b-icon icon="house-door-fill" variant="white"></b-icon>
