@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
 
   publicRuntimeConfig: {
     client_id: process.env.CLIENT_ID,
@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'eco-lawn',
+    title: 'Eco Lawn',
     htmlAttrs: {
       lang: 'en'
     },
