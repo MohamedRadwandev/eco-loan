@@ -47,39 +47,43 @@
           <b-col cols="12" md="4">
             <p class="h4">BLOGS</p>
 
-            <a href="#" class="text-success">
-              10 Things You Need to Know Before Buying Artificial Grass
-            </a>
-            <a href="#" class="text-success"> How Is Artificial Grass Made? </a>
-            <a href="#" class="text-success">
-              Is Artificial Grass Worth the Money?
-            </a>
-            <a href="#" class="text-success">
-              Advantages of an Artificial Turf Sports Fields
-            </a>
+            <div class="d-flex flex-column mt-5" style="gap:12px">
+              <a href="#" class="text-success">
+                10 Things You Need to Know Before Buying Artificial Grass
+              </a>
+              <a href="#" class="text-success"> How Is Artificial Grass Made? </a>
+              <a href="#" class="text-success">
+                Is Artificial Grass Worth the Money?
+              </a>
+              <a href="#" class="text-success">
+                Advantages of an Artificial Turf Sports Fields
+              </a>
+            </div>
           </b-col>
           <b-col cols="12" md="4">
-            <p class="h4">CONTACT</p>
+            <p class="h4 mb-5">CONTACT</p>
 
-            <div class="d-flex">
-              <b-icon icon="plus"></b-icon>
-              <p>
-                0800 002 648 <br />
-                +64 9 320 4613 (International) <br />
-                Mon-Fri, 9AM to 5PM
-              </p>
-            </div>
-
-            <div class="d-flex">
-              <b-icon icon="plus"></b-icon>
-              <a href="mailto:care@ecolawn.nz">care@ecolawn.nz</a>
-            </div>
-            <div class="d-flex">
-              <b-icon icon="plus"></b-icon>
-              <p>
-                74B Patiki Road, Rosebank Auckland 1026 (Head office and
-                warehouse – not a showroom)
-              </p>
+            <div class="d-flex flex-column mt-5" style="gap:8px">
+              <div class="d-flex">
+                <b-icon icon="telephone-fill" variant="white"></b-icon>
+                <p class="ml-3 mb-0">
+                  0800 002 648 <br />
+                  +64 9 320 4613 (International) <br />
+                  Mon-Fri, 9AM to 5PM
+                </p>
+              </div>
+              
+              <div class="d-flex">
+                <b-icon icon="envelope-fill" variant="white"></b-icon>
+                <a href="mailto:care@ecolawn.nz" class="ml-3 text-success">care@ecolawn.nz</a>
+              </div>
+              <div class="d-flex">
+                <b-icon icon="telephone-fill" variant="white"></b-icon>
+                <p class="ml-3 mb-0">
+                  74B Patiki Road, Rosebank Auckland 1026 (Head office and
+                  warehouse – not a showroom)
+                </p>
+              </div>
             </div>
           </b-col>
           <b-col cols="12" class="text-center my-5">
@@ -94,9 +98,9 @@
 
       <div class="bg-primary py-4">
         <b-container class="d-flex align-items-center">
-          <b-icon icon="plus"></b-icon>
+          <b-icon icon="exclamation-circle-fill" font-scale="1.8"></b-icon>
 
-          <p class="mb-0">
+          <p class="mb-0 ml-4 h6 line-height-sm">
             The intended recipient of this quote agrees that the content and
             pricing of this contract is commercially sensitive and that they,
             therefore, agree to keep the information entirely confidential, even

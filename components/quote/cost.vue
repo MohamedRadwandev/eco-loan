@@ -199,7 +199,7 @@ export default {
   },
   computed: {
     allColsExpanded() {
-      return this.items.every((item) => item._showDetails);
+      return this.items.slice(1).every((item) => item._showDetails);
     },
   },
   watch: {
@@ -213,7 +213,7 @@ export default {
     },
     toggleCollapseAll() {
       this.expandAll = !this.expandAll;
-      this.items.forEach((item) => {
+      this.items.slice(1).forEach((item) => {
         item._showDetails = this.expandAll;
       });
     },

@@ -18,7 +18,7 @@ export default {
       client_id: this.$config.client_id,
       client_secret: this.$config.client_secret
     }
-    this.$axios.post('oauth/token' , data)
+    this.$axios.get('quote/1' , data)
   }
 };
 </script>
