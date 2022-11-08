@@ -1,6 +1,6 @@
 <template>
   <div>
-    <QuoteBanner />
+    <QuoteBanner  />
     <QuoteCost />
     <QuoteSteps />
     <QuoteTerms />
@@ -8,17 +8,19 @@
 </template>
 
 <script>
+
+import quote from '~/temp.json'
 export default {
 
-  created() {
+  // async fetch() {
 
-    const data = {
-      grant_type: 'client_credentials',
-      scope: '*',
-      client_id: this.$config.client_id,
-      client_secret: this.$config.client_secret
+  //   await this.$axios.get('quote/e129d7ca-363c-11ed-9a2d-00163edf12f7', { params: { token: '63312f338ec63'}})
+
+  // }
+  provide() {
+    return {
+      quote
     }
-    this.$axios.get('quote/1' , data)
-  }
+  },
 };
 </script>

@@ -1,0 +1,117 @@
+{
+     "id": 7184,
+     "pipedrive_deal_id": "9393",
+     "pipedrive_won_deal_id": "0",
+     "customer_name": "Praneel Dutt",
+     "customer_organization": null,
+     "customer_email": "Praneel.dutt@xtra.co.nz",
+     "customer_phone": "021611375",
+     "site_address": "9 stroom street flat bush",
+     "pricing": {
+          "sub_total": 4642.670000000000072759576141834259033203125,
+          "discount_percentage": 0,
+          "discount_amount": 0,
+          "discount_amount_with_gst": 0,
+          "tax_percentage": 15,
+          "tax_amount": 696.3999999999999772626324556767940521240234375,
+          "total_amount": 5339.0699999999997089616954326629638671875,
+          "deposit_percentage": 55,
+          "deposit_amount": 2936.489999999999781721271574497222900390625
+     },
+     "site_plan_url": "https://api.ecolawn.nz/siteplans/218f5e9a93cf42d787a48e1f0f6e8664.jpg",
+     "quote_create_date": "2022-09-26 05:52:05",
+     "quote_accepted": 0,
+     "quote_notes": "Lead time 7-8+ weeks",
+     "quote_created_by": "Gareth Tipene (Synthetic Turf Expert)",
+     "quote_sent_date": {
+          "date": "2022-08-03 14:30:23.000000",
+          "timezone_type": 3,
+          "timezone": "UTC"
+     },
+     "items": [
+          {
+               "id": 146050,
+               "name": "100x25 Containment",
+               "description": "Install timber containment edging using 100x25 RS H4 timber.",
+               "unit_price": 25,
+               "quantity": 11.28999999999999914734871708787977695465087890625,
+               "unit": "M",
+               "sub_total": 282.25,
+               "tax_percentage": 15,
+               "tax_amount": 42.340000000000003410605131648480892181396484375,
+               "total_amount": 324.58999999999997498889570124447345733642578125
+          },
+          {
+               "id": 146051,
+               "name": "Access",
+               "description": "Difficulty level of getting equipment and/or materials in and/or our of the work site. It could relate to distance, elevation, terrain conditions, parking or a delecate surface transition.",
+               "unit_price": 300,
+               "quantity": 1,
+               "unit": "EA",
+               "sub_total": 300,
+               "tax_percentage": 15,
+               "tax_amount": 45,
+               "total_amount": 345
+          },
+          {
+               "id": 146052,
+               "name": "Cartage",
+               "description": "Load up and travel to and from work site. Pack down at the end of the day. Charged per team, per day.",
+               "unit_price": 170,
+               "quantity": 2,
+               "unit": "EA",
+               "sub_total": 340,
+               "tax_percentage": 15,
+               "tax_amount": 51,
+               "total_amount": 391
+          },
+          {
+               "id": 146053,
+               "name": "Geotek Cloth",
+               "description": "Lay Geotek matting below aggregate base to improve stability of the substrate and help protect against subsurface weed growth. ",
+               "unit_price": 4,
+               "quantity": 29.28999999999999914734871708787977695465087890625,
+               "unit": "M²",
+               "sub_total": 117.159999999999996589394868351519107818603515625,
+               "tax_percentage": 15,
+               "tax_amount": 17.57000000000000028421709430404007434844970703125,
+               "total_amount": 134.729999999999989768184605054557323455810546875
+          },
+          {
+               "id": 146054,
+               "name": "Lush 35 v4",
+               "description": "Supply Lush 35 V4: Roll width = 3.4m | Pile Height = 35mm | Gauge = 3/8\" | Stitch Rate = 140/100cm +/-2% | Density = 14,700/m2 +/-3% | Dtex = 15,100 +/- 3% | Infill Material = Washed and dried sand | Infill Grade = 0.3mm to 1.0mm | Infill Rate = 7kg / m2 | Yarn = PE | Primary Backing = Recyclable backing green | Secondary Backing = Recyclable coating clear | Drainage (Osmosis) = 7200 Ltr per Hour | 10 year product guarantee as per T's & C's. The lay plan may differ from the plan. ",
+               "unit_price": 50.89999999999999857891452847979962825775146484375,
+               "quantity": 30.510000000000001563194018672220408916473388671875,
+               "unit": "M²",
+               "sub_total": 1552.9600000000000363797880709171295166015625,
+               "tax_percentage": 15,
+               "tax_amount": 232.93999999999999772626324556767940521240234375,
+               "total_amount": 1785.90000000000009094947017729282379150390625
+          },
+          {
+               "id": 146056,
+               "name": "100mm Full Ground Preparation",
+               "description": "Remove and dump up to 90mm of clean fill. Apply up to 100mm of aggregate, level based on existing contour and compact (compaction reduces substrate to approximately 80mm), final screed to a fine finish ready for turf installation.",
+               "unit_price": 40,
+               "quantity": 29.28999999999999914734871708787977695465087890625,
+               "unit": "M²",
+               "sub_total": 1171.59999999999990905052982270717620849609375,
+               "tax_percentage": 15,
+               "tax_amount": 175.740000000000009094947017729282379150390625,
+               "total_amount": 1347.339999999999918145476840436458587646484375
+          },
+          {
+               "id": 146058,
+               "name": "Turf-Installation",
+               "description": "Lay turf, cut to shape, fix to ground using ground pins at approximately 250mm spacings around the perimeter (standard residential installation) or spot glue using adhesive around the perimeter if fixed to concrete or using staples and adhesive around perimeter if a plinth has been installed. Seam seal joins using joining tape if required and then brush in the required amount of infill if required and broom clean area.",
+               "unit_price": 30,
+               "quantity": 29.28999999999999914734871708787977695465087890625,
+               "unit": "M²",
+               "sub_total": 878.700000000000045474735088646411895751953125,
+               "tax_percentage": 15,
+               "tax_amount": 131.81000000000000227373675443232059478759765625,
+               "total_amount": 1010.509999999999990905052982270717620849609375
+          }
+     ]
+}

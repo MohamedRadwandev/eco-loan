@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  ssr: false,
 
   publicRuntimeConfig: {
     client_id: process.env.CLIENT_ID,
@@ -32,6 +32,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/auth',
+    '~/plugins/filters',
+    '~/plugins/axios',
     '~/plugins/bootstrap'
   ],
 

@@ -1,5 +1,5 @@
 <template>
-  <b-container class="mt-4">
+  <b-container class="mt-5">
     <p class="h3 font-weight-bold">Installer notes</p>
 
     <b-row class="mt-4">

@@ -69,15 +69,15 @@
           ></b-icon>
         </b-btn>
       </template>
-      <template #cell(price)="row">
-        <p class="h5" v-if="row.item.price">${{ row.item.price }}</p>
+      <template #cell(sub_total)="row">
+        <p class="h5" v-if="row.item.sub_total">{{ row.item.sub_total | money }}</p>
       </template>
       <template #cell(quantity)="row">
-        <p class="h5" v-if="row.item.quantity">{{ row.item.quantity }} M</p>
+        <p class="h5" v-if="row.item.quantity">{{ row.item.quantity }} {{ row.item.unit }}</p>
       </template>
-      <template #cell(total)="row">
-        <p class="font-weight-bold" v-if="row.item.total">
-          ${{ row.item.total }}
+      <template #cell(total_amount)="row">
+        <p class="font-weight-bold" v-if="row.item.total_amount">
+          {{ row.item.total_amount | money }}
         </p>
       </template>
 
@@ -111,7 +111,9 @@
           "
         >
           <p class="h4 mb-0">Total amount (inc GST)</p>
-          <p class="font-size-24 font-weight-bold ml-md-4 mb-0">$6,290.07</p>
+          <p class="font-size-24 font-weight-bold ml-md-4 mb-0">
+            {{ quote.pricing.total_amount | money}}
+          </p>
         </div>
       </b-card-text>
     </b-card>
@@ -124,22 +126,24 @@
         <b-col cols="12" md="6">
           <p class="h3 font-weight-bold">Deposit payable</p>
           <p class="h5 line-height-lg mb-0">
-            In order to accept this quote you will be required to pay a 55%
+            In order to accept this quote you will be required to pay a {{ quote.pricing.deposit_percentage}}%
             deposit. <br />
-            Clearance of your 55% deposit payment will confirm your job booking
+            Clearance of your {{ quote.pricing.deposit_percentage}}% deposit payment will confirm your job booking
             and quote <br />
             acceptance.
           </p>
         </b-col>
         <b-col cols="12" md="6" class="text-md-right">
           <div class="d-flex align-items-center justify-content-end">
-            <p class="h4 mb-0">Deposit 50% of total amount</p>
-            <p class="font-size-24 font-weight-bold mb-0 ml-4">$3,459.54</p>
+            <p class="h4 mb-0">Deposit {{ quote.pricing.deposit_percentage}}% of total amount</p>
+            <p class="font-size-24 font-weight-bold mb-0 ml-4">{{ quote.pricing.deposit_amount |money }}</p>
           </div>
           <p class="h6 mt-2">Deposit due in xx days for work to start</p>
           <div class="d-flex align-items-center justify-content-end mt-4">
             <p class="h4 mb-0">Remainder due on completion</p>
-            <p class="font-size-24 font-weight-bold mb-0 ml-4">$3,459.54</p>
+            <p class="font-size-24 font-weight-bold mb-0 ml-4">
+              {{ (quote.pricing.total_amount  - quote.pricing.deposit_amount) | money}}
+            </p>
           </div>
         </b-col>
       </b-row>
@@ -151,6 +155,7 @@
 import { BIcon } from "bootstrap-vue";
 
 export default {
+  inject: ['quote'],
   components: {
     BIcon,
   },
@@ -158,41 +163,15 @@ export default {
     return {
       fields: [
         { key: "name", label: "Name", tdClass: "w-50" },
-        "price",
-        "quantity",
-        "total",
+        { key: "sub_total", label: "price" },
+        { key: "quantity", label: "quantity" },
+        { key: "total_amount", label: "total" },
       ],
       items: [
         {
           _showDetails: false,
         },
-        {
-          name: "H4 timber containment",
-          description:
-            "Install timber containment edging using 100x25 RS H4 timber.",
-          price: 30,
-          quantity: 2,
-          total: 30,
-          _showDetails: false,
-        },
-        {
-          name: "H4 timber containment",
-          description:
-            "Install timber containment edging using 100x25 RS H4 timber.",
-          price: 30,
-          quantity: 2,
-          total: 30,
-          _showDetails: false,
-        },
-        {
-          name: "H4 timber containment",
-          description:
-            "Install timber containment edging using 100x25 RS H4 timber.",
-          price: 30,
-          quantity: 2,
-          total: 30,
-          _showDetails: false,
-        },
+        ...this.formatItems()
       ],
       expandAll: false,
     };
@@ -200,7 +179,7 @@ export default {
   computed: {
     allColsExpanded() {
       return this.items.slice(1).every((item) => item._showDetails);
-    },
+    }
   },
   watch: {
     allColsExpanded(val) {
@@ -217,6 +196,14 @@ export default {
         item._showDetails = this.expandAll;
       });
     },
+    formatItems() {
+      return this.quote.items.map(item => {
+        return {
+          _showDetails:false,
+          ...item
+        };
+      })
+    }
   },
 };
 </script>
