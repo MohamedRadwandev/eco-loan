@@ -85,6 +85,10 @@ table thead th {
 cursor: pointer;
 }
 
+.font-weight-medium{
+      font-weight: 500 !important;
+
+}
 @include media-breakpoint-up(md){
   .w-md-auto{
     width: auto !important;
