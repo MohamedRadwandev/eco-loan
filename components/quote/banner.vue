@@ -3,8 +3,8 @@
           <b-container>
                <b-row>
                     <b-col cols="12" md="6">
-                         <p class="h2 font-weight-bold mb-4">{{ name.first }}’s Eco Lawn quote</p>
-                         <p class="h3 font-weight-bold mb-4">Customer info</p>
+                         <p class="h3 md-h2 font-weight-bold mb-4">{{ name.first }}’s Eco Lawn quote</p>
+                         <p class="h4 md-h3 font-weight-bold mb-4">Customer info</p>
      
                          <div class="d-flex align-items-start mb-3" style="gap: 50px">
                               <div>
@@ -30,8 +30,8 @@
      
                     <b-col cols="12" md="6" class="text-md-right d-flex flex-column justify-content-between mt-5 mt-md-0">
                          <div class="mb-md-5 mb-3">
-                              <p class="h3 font-weight-bold mb-2">Sales ref # {{ quote.pipedrive_deal_id }}</p>
-                              <p class="h3 font-weight-bold">Quote ref # {{ quote.id }}</p>
+                              <p class="h4 md-h3 font-weight-bold mb-2">Sales ref # {{ quote.pipedrive_deal_id }}</p>
+                              <p class="h4 md-h3 font-weight-bold">Quote ref # {{ quote.id }}</p>
                          </div>
                          <div>
                               <div class="mb-4">

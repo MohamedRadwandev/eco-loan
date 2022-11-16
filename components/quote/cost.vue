@@ -7,7 +7,7 @@
       responsive
       :items="items"
       :fields="fields"
-      class="mt-5"
+      class="mt-4"
       @row-clicked="toggleCollapse"
       details-td-class="d-md-none pt-0"
     >
@@ -26,17 +26,13 @@
           ></b-icon>
         </b-btn>
       </template>
-      <template #head(total)>
-        Total
-        <span
-          class="
-            h6
-            text-muted text-transform-none
-            font-weight-normal
-            text-nowrap
-          "
-          >(inc GST)</span
-        >
+      <template #head(total_amount)>
+        <div class="text-nowrap text-right">
+          Total
+          <span class="h6 text-muted text-transform-none font-weight-normal"
+            >(inc GST)</span
+          >
+        </div>
       </template>
 
       <template #cell(name)="row">
@@ -46,7 +42,7 @@
               {{ row.item.name }}
             </p>
             <b-icon
-              class="text-dark ml-4"
+              class="text-dark ml-3"
               :icon="row.detailsShowing ? 'chevron-up' : 'chevron-down'"
             ></b-icon>
           </div>
@@ -70,13 +66,17 @@
         </b-btn>
       </template>
       <template #cell(sub_total)="row">
-        <p class="h5" v-if="row.item.sub_total">{{ row.item.sub_total | money }}</p>
+        <p class="h5" v-if="row.item.sub_total">
+          {{ row.item.sub_total | money }}
+        </p>
       </template>
       <template #cell(quantity)="row">
-        <p class="h5" v-if="row.item.quantity">{{ row.item.quantity }} {{ row.item.unit }}</p>
+        <p class="h5" v-if="row.item.quantity">
+          {{ row.item.quantity }} {{ row.item.unit }}
+        </p>
       </template>
       <template #cell(total_amount)="row">
-        <p class="font-weight-bold" v-if="row.item.total_amount">
+        <p class="font-weight-bold h5" v-if="row.item.total_amount">
           {{ row.item.total_amount | money }}
         </p>
       </template>
@@ -88,7 +88,7 @@
       </template>
     </b-table>
 
-    <b-card bg-variant="green-400" border-variant="green-400" class="mt-5">
+    <b-card bg-variant="green-400" border-variant="green-400" class="mt-4">
       <b-card-text
         class="
           py-3
@@ -105,44 +105,57 @@
         <div
           class="
             d-flex
-            align-items-start align-items-md-center
+            align-items-start align-items-md-start
             flex-column flex-md-row
             mt-3 mt-md-0
           "
         >
-          <p class="h4 mb-0">Total amount (inc GST)</p>
-          <p class="font-size-24 font-weight-bold ml-md-4 mb-0">
-            {{ quote.pricing.total_amount | money}}
-          </p>
+          <p class="h4 mb-0 line-height-xl">Total amount (inc GST)</p>
+          <div>
+            <p class="font-size-24 font-weight-bold ml-md-4 mb-0">
+              {{ quote.pricing.total_amount | money }}
+            </p>
+            <p class="text-muted h6 mt-1 text-right mb-0">
+              GST included $500.50
+            </p>
+          </div>
         </div>
       </b-card-text>
     </b-card>
     <b-card
       bg-variant="dark"
       border-variant="dark"
-      class="rounded-0 mt-4 text-white py-3 px-2"
+      class="rounded-0 mt-4 text-white py-0 px-0 border-0"
+      body-class="p-4"
     >
       <b-row>
         <b-col cols="12" md="6">
           <p class="h3 font-weight-bold">Deposit payable</p>
           <p class="h5 line-height-lg mb-0">
-            In order to accept this quote you will be required to pay a {{ quote.pricing.deposit_percentage}}%
-            deposit. <br />
-            Clearance of your {{ quote.pricing.deposit_percentage}}% deposit payment will confirm your job booking
-            and quote <br />
+            In order to accept this quote you will be required to pay a
+            {{ quote.pricing.deposit_percentage }}% deposit. 
+            Clearance of your {{ quote.pricing.deposit_percentage }}% deposit
+            payment will confirm your job booking and quote 
             acceptance.
           </p>
         </b-col>
-        <b-col cols="12" md="6" class="text-md-right">
-          <div class="d-flex align-items-center justify-content-end">
-            <p class="h4 mb-0">Deposit {{ quote.pricing.deposit_percentage}}% of total amount</p>
-            <p class="font-size-24 font-weight-bold mb-0 ml-4">{{ quote.pricing.deposit_amount |money }}</p>
+        <b-col cols="12" md="6" class="text-md-right mt-5 mt-md-0">
+          <div class="d-flex align-items-center  justify-content-between justify-content-md-end">
+            <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">
+              Deposit {{ quote.pricing.deposit_percentage }}% of total amount
+            </p>
+            <p class="font-size-24 font-weight-bold mb-0 ml-4 ">
+              {{ quote.pricing.deposit_amount | money }}
+            </p>
           </div>
-          <p class="h6 mt-2">Deposit due in xx days for work to start</p>
-          <div class="d-flex align-items-center justify-content-end mt-4">
-            <p class="h4 mb-0">Remainder due on completion</p>
+          <p class="h6 mt-2 w-50 w-md-auto">Deposit due in xx days for work to start</p>
+          <div class="d-flex align-items-center justify-content-between justify-content-md-end mt-4">
+            <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">Remainder due on completion</p>
             <p class="font-size-24 font-weight-bold mb-0 ml-4">
-              {{ (quote.pricing.total_amount  - quote.pricing.deposit_amount) | money}}
+              {{
+                (quote.pricing.total_amount - quote.pricing.deposit_amount)
+                  | money
+              }}
             </p>
           </div>
         </b-col>
@@ -155,23 +168,28 @@
 import { BIcon } from "bootstrap-vue";
 
 export default {
-  inject: ['quote'],
+  inject: ["quote"],
   components: {
     BIcon,
   },
   data() {
     return {
       fields: [
-        { key: "name", label: "Name", tdClass: "w-50" },
+        { key: "name", label: "Name", tdClass: "w-65" },
         { key: "sub_total", label: "price" },
-        { key: "quantity", label: "quantity" },
-        { key: "total_amount", label: "total" },
+        {
+          key: "quantity",
+          label: "quantity",
+          thClass: "text-center",
+          tdClass: "text-center",
+        },
+        { key: "total_amount", label: "total", tdClass: "text-right" },
       ],
       items: [
         {
           _showDetails: false,
         },
-        ...this.formatItems()
+        ...this.formatItems(),
       ],
       expandAll: false,
     };
@@ -179,7 +197,7 @@ export default {
   computed: {
     allColsExpanded() {
       return this.items.slice(1).every((item) => item._showDetails);
-    }
+    },
   },
   watch: {
     allColsExpanded(val) {
@@ -197,13 +215,13 @@ export default {
       });
     },
     formatItems() {
-      return this.quote.items.map(item => {
+      return this.quote.items.map((item) => {
         return {
-          _showDetails:false,
-          ...item
+          _showDetails: false,
+          ...item,
         };
-      })
-    }
+      });
+    },
   },
 };
 </script>

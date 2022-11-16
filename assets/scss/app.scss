@@ -14,11 +14,11 @@ $theme-colors: ("dark": #1A1A1A,
   "white":#fff,
   "blue" : $blue);
 
-$container-max-widths: (sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1500px);
+// $container-max-widths: (sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1500px);
 
 
 $font-family-base:'Montserrat',
@@ -31,6 +31,9 @@ $btn-font-size:14px;
 @import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
 
+.w-65{
+  width: 65%;
+}
 .btn-success{
   color:#fff;
 }
@@ -61,11 +64,17 @@ table thead th {
 .text-transform-none{
   text-transform: none;
 }
+.line-height-inherit{
+  line-height: inherit;
+}
 .line-height-sm{
   line-height: 14px;
 }
 .line-height-lg{
   line-height: 24px;
+}
+.line-height-xl{
+  line-height: 36px;
 }
 
 .font-size-24{
@@ -79,5 +88,20 @@ cursor: pointer;
 @include media-breakpoint-up(md){
   .w-md-auto{
     width: auto !important;
+  }
+  .md-h4{
+    font-size: 1.25rem;
+  }
+  .md-h3{
+    font-size: 1.75rem;
+  }
+  .md-h2{
+    font-size: 2.625rem;
+  }
+  .font-weight-md-medium{
+    font-weight: 500 !important;
+  }
+  .text-md-center{
+    text-align: center !important;
   }
 }

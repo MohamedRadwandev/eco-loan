@@ -1,8 +1,8 @@
 <template>
-<b-container style="margin-top: 120px;">
-     <p class="h3 text-center font-weight-bold">Click pay deposit to accept your quote</p>
+<b-container>
+     <p class="h3 text-left text-md-center font-weight-bold">Click pay deposit to accept your quote</p>
 
-     <div class="accordion mt-5" role="tablist">
+     <div class="accordion mt-4" role="tablist">
           <b-card bg-variant="transparent" border-variant="success" no-body class="mb-1 rounded-sm py-2">
                <b-card-header header-tag="header"  class="bg-white cursor-pointer px-3 border-0 d-flex align-items-center justify-content-between" role="tab" v-b-toggle.accordion-1>
                     <p class="mb-0 h5 font-weight-bold text-uppercase">Terms & conditions</p>
@@ -355,3 +355,15 @@ export default {
      }
 }
 </script>
+
+<style scoped>
+.container{
+     margin-top: 64px;
+}
+
+@media (min-width: 992px) {
+.container {
+          margin-top: 120px;
+     }
+}
+</style>

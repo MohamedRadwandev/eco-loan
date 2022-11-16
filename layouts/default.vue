@@ -2,13 +2,13 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <b-container>
-        <b-navbar-brand href="#">
+        <b-navbar-brand href="#" class="flex-grow-1">
           <img src="~/static/imgs/logo.png" alt="Logo" />
         </b-navbar-brand>
 
 
-        <b-navbar-nav class="ml-md-auto flex-grow-1 flex-md-grow-0">
-          <b-btn variant="outline-white" class="mr-md-4 my-3 my-md-0 px-5">REQUEST FINANCE</b-btn>
+        <b-navbar-nav class="ml-lg-auto flex-grow-1 flex-lg-grow-0">
+          <b-btn variant="outline-white" class="mr-lg-4 my-3 my-lg-0 px-5">REQUEST FINANCE</b-btn>
           <b-btn variant="success" class="px-5 mb-3 mb-md-0">PAY DEPOSIT</b-btn>
         </b-navbar-nav>
       </b-container>
@@ -22,10 +22,10 @@
           <b-col cols="12" class="mb-4">
             <img src="~/static/imgs/kiwi.png" alt="" />
           </b-col>
-          <b-col cols="12" md="4">
+          <b-col cols="12" md="4" class="mt-3 mt-md-0">
             <p class="h4">SHOWROOMS</p>
 
-            <div class="mt-5 h5">
+            <div class="mt-4 h5">
               <p class="font-weight-bold mb-1">
                 Domo Luxury Furniture Concepts
               </p>
@@ -44,26 +44,26 @@
               <p>1A Shipwright Lane, Parnell, Auckland 1052</p>
             </div>
           </b-col>
-          <b-col cols="12" md="4">
+          <b-col cols="12" md="4" class="mt-4 mt-md-0">
             <p class="h4">BLOGS</p>
 
-            <div class="d-flex flex-column mt-5" style="gap:12px">
-              <a href="#" class="text-success">
+            <div class="d-flex flex-column mt-4" style="gap:12px">
+              <a href="#" class="text-success h5 mb-0">
                 10 Things You Need to Know Before Buying Artificial Grass
               </a>
-              <a href="#" class="text-success"> How Is Artificial Grass Made? </a>
-              <a href="#" class="text-success">
+              <a href="#" class="text-success h5 mb-0"> How Is Artificial Grass Made? </a>
+              <a href="#" class="text-success h5 mb-0">
                 Is Artificial Grass Worth the Money?
               </a>
-              <a href="#" class="text-success">
+              <a href="#" class="text-success h5 mb-0">
                 Advantages of an Artificial Turf Sports Fields
               </a>
             </div>
           </b-col>
-          <b-col cols="12" md="4">
-            <p class="h4 mb-5">CONTACT</p>
+          <b-col cols="12" md="4" class="mt-4 mt-md-0">
+            <p class="h4 ">CONTACT</p>
 
-            <div class="d-flex flex-column mt-5" style="gap:12px">
+            <div class="d-flex flex-column mt-4" style="gap:12px">
               <div class="d-flex">
                 <b-icon icon="telephone-fill" variant="white"></b-icon>
                 <p class="ml-3 mb-0">
