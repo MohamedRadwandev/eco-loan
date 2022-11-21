@@ -1,6 +1,6 @@
 <template>
   <div class="py-5 bg-green-400">
-    <b-container>
+    <b-container class="pb-5">
       <b-row>
         <b-col cols="12" md="6">
           <p class="h1 font-weight-bold">Job Reference Number</p>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pb-5">
     <b-navbar variant="primary">
       <b-container>
         <b-button to="/" variant="link" class="text-white font-weight-medium">

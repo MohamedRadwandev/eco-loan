@@ -20,7 +20,7 @@ $theme-colors: ("dark": #1A1A1A,
 //   xl: 1140px,
 //   xxl: 1500px);
 
-
+$body-color:#000;
 $font-family-base:'Montserrat',
 sans-serif;
 $font-weight-base:500;
@@ -92,6 +92,9 @@ cursor: pointer;
 @include media-breakpoint-up(md){
   .w-md-auto{
     width: auto !important;
+  }
+  .md-h5{
+    font-size: 0.875rem;
   }
   .md-h4{
     font-size: 1.25rem;

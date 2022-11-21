@@ -23,21 +23,21 @@
             <img src="~/static/imgs/kiwi.png" alt="" />
           </b-col>
           <b-col cols="12" md="4" class="mt-3 mt-md-0">
-            <p class="h4">SHOWROOMS</p>
+            <p class="h5 md-h4">SHOWROOMS</p>
 
-            <div class="mt-4 h5">
+            <div class="mt-4 h6 md-h5">
               <p class="font-weight-bold mb-1">
                 Domo Luxury Furniture Concepts
               </p>
               <p>1A Shipwright Lane, Parnell, Auckland 1052</p>
             </div>
-            <div class="mt-4 h5">
+            <div class="mt-4 h6 md-h5">
               <p class="font-weight-bold mb-1">
                 Domo Luxury Furniture Concepts
               </p>
               <p>1A Shipwright Lane, Parnell, Auckland 1052</p>
             </div>
-            <div class="mt-4 h5">
+            <div class="mt-4 h6 md-h5">
               <p class="font-weight-bold mb-1">
                 Domo Luxury Furniture Concepts
               </p>
@@ -45,28 +45,28 @@
             </div>
           </b-col>
           <b-col cols="12" md="4" class="mt-4 mt-md-0">
-            <p class="h4">BLOGS</p>
+            <p class="h5 md-h4">BLOGS</p>
 
             <div class="d-flex flex-column mt-4" style="gap:12px">
-              <a href="#" class="text-success h5 mb-0">
+              <a href="#" class="text-success h6 md-h5 mb-0">
                 10 Things You Need to Know Before Buying Artificial Grass
               </a>
-              <a href="#" class="text-success h5 mb-0"> How Is Artificial Grass Made? </a>
-              <a href="#" class="text-success h5 mb-0">
+              <a href="#" class="text-success h6 md-h5 mb-0"> How Is Artificial Grass Made? </a>
+              <a href="#" class="text-success h6 md-h5 mb-0">
                 Is Artificial Grass Worth the Money?
               </a>
-              <a href="#" class="text-success h5 mb-0">
+              <a href="#" class="text-success h6 md-h5 mb-0">
                 Advantages of an Artificial Turf Sports Fields
               </a>
             </div>
           </b-col>
           <b-col cols="12" md="4" class="mt-4 mt-md-0">
-            <p class="h4 ">CONTACT</p>
+            <p class="h5 md-h4 ">CONTACT</p>
 
             <div class="d-flex flex-column mt-4" style="gap:12px">
               <div class="d-flex">
                 <b-icon icon="telephone-fill" variant="white"></b-icon>
-                <p class="ml-3 mb-0">
+                <p class="ml-3 mb-0 h6 md-h5">
                   0800 002 648 <br />
                   +64 9 320 4613 (International) <br />
                   Mon-Fri, 9AM to 5PM
@@ -75,21 +75,21 @@
               
               <div class="d-flex">
                 <b-icon icon="envelope-fill" variant="white"></b-icon>
-                <a href="mailto:care@ecolawn.nz" class="ml-3 text-success" style="line-height: 15px;">care@ecolawn.nz</a>
+                <a href="mailto:care@ecolawn.nz" class="ml-3 text-success h6 md-h5" style="line-height: 15px;">care@ecolawn.nz</a>
               </div>
               <div class="d-flex">
                 <b-icon icon="house-door-fill" variant="white"></b-icon>
-                <p class="ml-3 mb-0">
+                <p class="ml-3 mb-0 h6 md-h5">
                   74B Patiki Road, Rosebank Auckland 1026 (Head office and
                   warehouse – not a showroom)
                 </p>
               </div>
             </div>
           </b-col>
-          <b-col cols="12" class="text-center my-5">
+          <b-col cols="12" class="text-center mt-5 mb-4">
             <img src="~/static/imgs/logo.png" alt="Logo" />
 
-            <p class="font-weight-bold">
+            <p class="font-weight-bold h6 mt-3">
               Copyright © 2021 by Eco Lawn. All right reserved.
             </p>
           </b-col>

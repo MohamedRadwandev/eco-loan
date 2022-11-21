@@ -9,7 +9,7 @@
         </p>
 
         <b-card
-          class="h5 rounded-sm py-4"
+          class="h5 rounded-sm pt-1 pb-2"
           bg-variant="gray-400"
           border-variant="gray-400"
         >
@@ -38,7 +38,7 @@
         <p class="h4 font-weight-bold mb-3">Vehicle access</p>
 
         <b-card
-          class="h5 rounded-sm py-4 flex-grow-1"
+          class="h5 rounded-sm pt-3 pb-4 flex-grow-1"
           bg-variant="gray-400"
           border-variant="gray-400"
         >
@@ -74,7 +74,7 @@
         <p class="h4 font-weight-bold mb-3">Tools needed</p>
 
         <b-card
-          class="h5 rounded-sm py-4 flex-grow-1"
+          class="h5 rounded-sm pt-3 pb-4  flex-grow-1"
           bg-variant="gray-400"
           border-variant="gray-400"
         >

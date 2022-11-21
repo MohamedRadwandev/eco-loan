@@ -1,5 +1,5 @@
 <template>
-  <b-container class="py-5">
+  <b-container class="pt-5 pb-4">
     <p class="h3 font-weight-bold">Products</p>
 
     <b-table
@@ -50,7 +50,7 @@ export default {
   data() {
     return {
          fields: [
-              { key: "name", tdClass: "w-75" },
+              { key: "name", tdClass: "w-75 pl-0" , thClass:"pl-0" },
               { key: "quantity", tdClass: "text-right", thClass:"text-right" },
          ],
       items: [
