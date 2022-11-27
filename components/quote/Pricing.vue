@@ -90,6 +90,7 @@
 
     <b-card bg-variant="green-400" border-variant="green-400" class="mt-4">
       <b-card-text
+        text-tag="div"
         class="
           py-3
           d-flex
@@ -133,24 +134,40 @@
           <p class="h3 font-weight-bold">Deposit payable</p>
           <p class="h5 line-height-lg mb-0">
             In order to accept this quote you will be required to pay a
-            {{ quote.pricing.deposit_percentage }}% deposit. 
-            Clearance of your {{ quote.pricing.deposit_percentage }}% deposit
-            payment will confirm your job booking and quote 
-            acceptance.
+            {{ quote.pricing.deposit_percentage }}% deposit. Clearance of your
+            {{ quote.pricing.deposit_percentage }}% deposit payment will confirm
+            your job booking and quote acceptance.
           </p>
         </b-col>
         <b-col cols="12" md="6" class="text-md-right mt-5 mt-md-0">
-          <div class="d-flex align-items-center  justify-content-between justify-content-md-end">
+          <div
+            class="
+              d-flex
+              align-items-center
+              justify-content-between justify-content-md-end
+            "
+          >
             <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">
               Deposit {{ quote.pricing.deposit_percentage }}% of total amount
             </p>
-            <p class="font-size-24 font-weight-bold mb-0 ml-4 ">
+            <p class="font-size-24 font-weight-bold mb-0 ml-4">
               {{ quote.pricing.deposit_amount | money }}
             </p>
           </div>
-          <p class="h6 mt-2 w-50 w-md-auto">Deposit due in xx days for work to start</p>
-          <div class="d-flex align-items-center justify-content-between justify-content-md-end mt-4">
-            <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">Remainder due on completion</p>
+          <p class="h6 mt-2 w-50 w-md-auto">
+            Deposit due in xx days for work to start
+          </p>
+          <div
+            class="
+              d-flex
+              align-items-center
+              justify-content-between justify-content-md-end
+              mt-4
+            "
+          >
+            <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">
+              Remainder due on completion
+            </p>
             <p class="font-size-24 font-weight-bold mb-0 ml-4">
               {{
                 (quote.pricing.total_amount - quote.pricing.deposit_amount)

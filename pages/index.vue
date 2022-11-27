@@ -8,16 +8,21 @@
 </template>
 
 <script>
-import quote from "~/temp.json";
 export default {
-  async fetch() {
-    await this.$axios.get("quotes/e129d7ca-363c-11ed-9a2d-00163edf12f7", {
-      params: { token: "63312f338ec63" },
-    });
+  async asyncData({ $axios }) {
+    const response = await $axios.get(
+      "quotes/e129d7ca-363c-11ed-9a2d-00163edf12f7",
+      {
+        params: { token: "63312f338ec63" },
+      }
+    );
+    return {
+      quote: response.data,
+    };
   },
   provide() {
     return {
-      quote,
+      quote: this.quote,
     };
   },
 };

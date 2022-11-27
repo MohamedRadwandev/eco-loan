@@ -1,8 +1,9 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: true,
+  target: 'server',
 
-  publicRuntimeConfig: {
+  privateRuntimeConfig: {
     client_id: process.env.CLIENT_ID,
     client_secret: process.env.CLIENT_SECRET,
   },
@@ -32,7 +33,6 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/auth',
     '~/plugins/filters',
     '~/plugins/axios',
     '~/plugins/bootstrap'
@@ -51,6 +51,7 @@ export default {
     ['bootstrap-vue/nuxt', { css: false }],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'cookie-universal-nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
