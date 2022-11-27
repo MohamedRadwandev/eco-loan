@@ -51,7 +51,7 @@
             <div class="mb-4">
               <p class="h5 font-weight-bold mb-3">
                 Date of quote:
-                {{ new Date(quote.quote_create_date).toLocaleDateString() }}
+                {{ created_date }}
               </p>
               <p class="h5">This quote is valid for 7 days.</p>
             </div>
@@ -84,6 +84,9 @@ export default {
         first: name[0],
         last: name[1],
       };
+    },
+    created_date() {
+      return new Date(this.quote.quote_create_date).toLocaleDateString();
     },
   },
 };

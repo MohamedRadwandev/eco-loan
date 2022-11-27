@@ -1,10 +1,10 @@
 <template>
-     <div>
-          <JobBanner />
-          <JobNotes />
-          <JobProducts />
-          <JobPlan />
-     </div>
+  <div>
+    <JobCustomerInfo />
+    <JobNotes />
+    <JobQuoteItems />
+    <JobSitePlan />
+  </div>
 </template>
 
 <script>

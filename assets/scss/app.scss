@@ -14,11 +14,6 @@ $theme-colors: ("dark": #1A1A1A,
   "white":#fff,
   "blue" : $blue);
 
-// $container-max-widths: (sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1140px,
-//   xxl: 1500px);
 
 $body-color:#000;
 $font-family-base:'Montserrat',
@@ -82,11 +77,11 @@ table thead th {
 }
 
 .cursor-pointer{
-cursor: pointer;
+ cursor: pointer;
 }
 
 .font-weight-medium{
-      font-weight: 500 !important;
+  font-weight: 500;
 
 }
 @include media-breakpoint-up(md){
