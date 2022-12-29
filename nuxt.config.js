@@ -1,7 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
-  target: 'server',
+  ssr: false,
 
   privateRuntimeConfig: {
     client_id: process.env.CLIENT_ID,
