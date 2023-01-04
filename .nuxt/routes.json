@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Job",
+    "path": "/Job",
+    "component": "C:\\\\laragon\\\\www\\\\eco-loan\\\\pages\\\\Job.vue",
+    "chunkName": "pages/Job"
+  },
+  {
+    "name": "Plan",
+    "path": "/Plan",
+    "component": "C:\\\\laragon\\\\www\\\\eco-loan\\\\pages\\\\Plan.vue",
+    "chunkName": "pages/Plan"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\laragon\\\\www\\\\eco-loan\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]

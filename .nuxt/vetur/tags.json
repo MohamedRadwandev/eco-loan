@@ -1,0 +1,26 @@
+{
+  "JobCustomerInfo": {
+    "description": "Auto imported from components/job/CustomerInfo.vue"
+  },
+  "JobNotes": {
+    "description": "Auto imported from components/job/Notes.vue"
+  },
+  "JobQuoteItems": {
+    "description": "Auto imported from components/job/QuoteItems.vue"
+  },
+  "JobSitePlan": {
+    "description": "Auto imported from components/job/SitePlan.vue"
+  },
+  "QuoteCustomerInfo": {
+    "description": "Auto imported from components/quote/CustomerInfo.vue"
+  },
+  "QuoteCustomerNotes": {
+    "description": "Auto imported from components/quote/CustomerNotes.vue"
+  },
+  "QuotePricing": {
+    "description": "Auto imported from components/quote/Pricing.vue"
+  },
+  "QuoteTerms": {
+    "description": "Auto imported from components/quote/Terms.vue"
+  }
+}
