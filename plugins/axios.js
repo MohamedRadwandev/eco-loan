@@ -9,7 +9,7 @@ export default function ({ $axios, $cookies, req }) {
 
           if (!req && !token) {
                // re run Nuxt ServerInit to get new token 
-               location.reload();
+               // location.reload();
           }
 
           if (token) {
