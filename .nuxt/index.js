@@ -13,10 +13,10 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_e01a1aea from 'nuxt_plugin_plugin_e01a1aea' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_a5712146 from 'nuxt_plugin_bootstrapvue_a5712146' // Source: .\\bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_cookieuniversalnuxt_5859ba54 from 'nuxt_plugin_cookieuniversalnuxt_5859ba54' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
-import nuxt_plugin_axios_61719f2e from 'nuxt_plugin_axios_61719f2e' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_4e79299c from 'nuxt_plugin_plugin_4e79299c' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_b5f758f8 from 'nuxt_plugin_bootstrapvue_b5f758f8' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_cookieuniversalnuxt_4e4e2006 from 'nuxt_plugin_cookieuniversalnuxt_4e4e2006' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
+import nuxt_plugin_axios_7826cb56 from 'nuxt_plugin_axios_7826cb56' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_filters_98405076 from 'nuxt_plugin_filters_98405076' // Source: ..\\plugins\\filters (mode: 'all')
 import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ..\\plugins\\axios (mode: 'all')
 import nuxt_plugin_bootstrap_0e119090 from 'nuxt_plugin_bootstrap_0e119090' // Source: ..\\plugins\\bootstrap (mode: 'all')
@@ -59,7 +59,7 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":true,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 const originalRegisterModule = Vuex.Store.prototype.registerModule
 
@@ -78,9 +78,6 @@ async function createApp(ssrContext, config = {}) {
   const store = createStore(ssrContext)
   // Add this.$router into store actions/mutations
   store.$router = router
-
-  // Fix SSR caveat https://github.com/nuxt/nuxt.js/issues/3757#issuecomment-414689141
-  store.registerModule = registerModule
 
   // Create Root instance
 
@@ -216,20 +213,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_e01a1aea === 'function') {
-    await nuxt_plugin_plugin_e01a1aea(app.context, inject)
+  if (typeof nuxt_plugin_plugin_4e79299c === 'function') {
+    await nuxt_plugin_plugin_4e79299c(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_a5712146 === 'function') {
-    await nuxt_plugin_bootstrapvue_a5712146(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_b5f758f8 === 'function') {
+    await nuxt_plugin_bootstrapvue_b5f758f8(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_cookieuniversalnuxt_5859ba54 === 'function') {
-    await nuxt_plugin_cookieuniversalnuxt_5859ba54(app.context, inject)
+  if (typeof nuxt_plugin_cookieuniversalnuxt_4e4e2006 === 'function') {
+    await nuxt_plugin_cookieuniversalnuxt_4e4e2006(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_61719f2e === 'function') {
-    await nuxt_plugin_axios_61719f2e(app.context, inject)
+  if (typeof nuxt_plugin_axios_7826cb56 === 'function') {
+    await nuxt_plugin_axios_7826cb56(app.context, inject)
   }
 
   if (typeof nuxt_plugin_filters_98405076 === 'function') {
