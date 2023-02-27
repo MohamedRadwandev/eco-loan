@@ -5,11 +5,11 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
+import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 
-import '..\\assets\\scss\\app.scss'
+import '../assets/scss/app.scss'
 
-import _6f6c098b from '..\\layouts\\default.vue'
+import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 
