@@ -16,10 +16,10 @@
 
     <nuxt />
 
-    <footer class="footer pt-5 mt-5 bg-dark text-white">
+    <footer class="footer pt-3 mt-5 bg-dark text-white">
       <b-container>
         <b-row>
-          <b-col cols="12" class="mb-4">
+          <!-- <b-col cols="12" class="mb-4">
             <img src="~/static/imgs/kiwi.png" alt="" />
           </b-col>
           <b-col cols="12" md="4" class="mt-3 mt-md-0">
@@ -85,8 +85,8 @@
                 </p>
               </div>
             </div>
-          </b-col>
-          <b-col cols="12" class="text-center mt-5 mb-4">
+          </b-col> -->
+          <b-col cols="12" class="text-center mb-4">
             <img src="~/static/imgs/logo.png" alt="Logo" />
 
             <p class="font-weight-bold h6 mt-3">
@@ -101,11 +101,7 @@
           <b-icon icon="exclamation-circle-fill" font-scale="1.8"></b-icon>
 
           <p class="mb-0 ml-4 h6 line-height-sm">
-            The intended recipient of this quote agrees that the content and
-            pricing of this contract is commercially sensitive and that they,
-            therefore, agree to keep the information entirely confidential, even
-            in circumstances where the tender is not accepted! And agree they
-            will not share this information with any third party whatsoever”
+            The intended recipient of this Job Brief agrees that the content and pricing of this contract is commercially sensitive and that they, therefore, agree to keep the information entirely confidential, under all circumstances and agree they will not share this information with any third party whatsoever
           </p>
         </b-container>
       </div>
