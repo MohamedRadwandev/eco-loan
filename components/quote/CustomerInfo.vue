@@ -52,7 +52,7 @@
             </p>
             <p class="h4 md-h3 font-weight-bold">Quote ref # {{ quote.id }}</p>
           </div>
-          <div>
+          <!-- <div>
             <div class="mb-4">
               <p class="h5 font-weight-bold mb-3">
                 Date of quote:
@@ -71,7 +71,7 @@
                 {{ quote.pricing.total_amount | money }}
               </p>
             </div>
-          </div>
+          </div> -->
         </b-col>
       </b-row>
     </b-container>

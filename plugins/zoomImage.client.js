@@ -1,4 +1,5 @@
+import VueViewer from 'v-viewer';
 import Vue from 'vue';
-import VueImageZoomer from 'vue-image-zoomer';
 
-Vue.component('vue-image-zoomer', VueImageZoomer)
+Vue.use(VueViewer)
+// Vue.component('vue-image-zoomer', VueImageZoomer)

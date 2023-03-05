@@ -49,6 +49,8 @@
 
           <p class="h5 mt-2 d-none d-md-block" v-if="row.item._showDetails">
             {{ row.item.description }}
+            <br />
+            <b-btn variant="primary" class="mt-3">Click to enlarge </b-btn>
           </p>
         </div>
         <b-btn
