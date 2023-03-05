@@ -5,15 +5,19 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
+import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 
-import '..\\assets\\scss\\app.scss'
+import '../assets/scss/app.scss'
 
+<<<<<<< HEAD
 import '..\\node_modules\\vue-image-zoomer\\dist\\style.css'
 
 import '..\\node_modules\\viewerjs\\dist\\viewer.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'
+=======
+import _6f6c098b from '../layouts/default.vue'
+>>>>>>> 84d9fdddb8e268a7c1f852051cbc232255b19ef2
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 
