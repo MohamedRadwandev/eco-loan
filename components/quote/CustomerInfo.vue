@@ -19,6 +19,12 @@
             </div>
           </div>
 
+          
+          <div class="mb-4">
+            <p class="h5 font-weight-bold">Phone</p>
+            <p class="h5">{{ quote.customer_phone }}</p>
+          </div>
+
           <div class="mb-4">
             <p class="h5 font-weight-bold">Company</p>
             <p class="h5">{{ quote.customer_organization | emptyDash }}</p>
