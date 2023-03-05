@@ -47,11 +47,39 @@
             ></b-icon>
           </div>
 
-          <p class="h5 mt-2 d-none d-md-block" v-if="row.item._showDetails">
-            {{ row.item.description }}
+          <div class="h5 mt-2 d-none d-md-block" v-if="row.item._showDetails">
+          
+            <b-row>
+              <b-col cols="12" md="4" class="mb-4 mb-md-0">
+                <b-img
+                  src="~/static/imgs/eco-prime.png"
+                  alt="eco-prime"
+                  class="w-100"
+                ></b-img>
+                <p class="h5 font-weight-bold mt-3">ECO PRIME 40</p>
+              </b-col>
+              <b-col cols="12" md="4" class="mb-4 mb-md-0">
+                <b-img
+                  src="~/static/imgs/soft-fall.png"
+                  alt="eco-prime"
+                  class="w-100"
+                ></b-img>
+                <p class="h5 font-weight-bold mt-3">SOFT FALL 15MM</p>
+              </b-col>
+              <b-col cols="12" md="4" class="mb-4 mb-md-0">
+                <b-img
+                  src="~/static/imgs/cross-section.png"
+                  alt="eco-prime"
+                  class="w-100"
+                ></b-img>
+                <p class="h5 font-weight-bold mt-3">Cross section example</p>
+              </b-col>
+            </b-row>
+
+            <!-- {{ row.item.description }} -->
             <br />
-            <b-btn variant="primary" class="mt-3">Click to enlarge </b-btn>
-          </p>
+            <b-btn variant="primary" class="mt-3" @click="$router.push('/plan')">Click to enlarge </b-btn>
+          </div>
         </div>
         <b-btn
           v-else
@@ -93,25 +121,14 @@
     <b-card bg-variant="green-400" border-variant="green-400" class="mt-4">
       <b-card-text
         text-tag="div"
-        class="
-          py-3
-          d-flex
-          align-items-start align-items-md-center
-          justify-content-between
-          flex-column flex-md-row
-        "
+        class="py-3 d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row"
       >
         <b-btn variant="success" class="px-5 w-100 w-md-auto"
           >VIEW PLAN HERE</b-btn
         >
 
         <div
-          class="
-            d-flex
-            align-items-start align-items-md-start
-            flex-column flex-md-row
-            mt-3 mt-md-0
-          "
+          class="d-flex align-items-start align-items-md-start flex-column flex-md-row mt-3 mt-md-0"
         >
           <p class="h4 mb-0 line-height-xl">Total amount (inc GST)</p>
           <div>
@@ -143,11 +160,7 @@
         </b-col>
         <b-col cols="12" md="6" class="text-md-right mt-5 mt-md-0">
           <div
-            class="
-              d-flex
-              align-items-center
-              justify-content-between justify-content-md-end
-            "
+            class="d-flex align-items-center justify-content-between justify-content-md-end"
           >
             <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">
               Deposit {{ quote.pricing.deposit_percentage }}% of total amount
@@ -160,12 +173,7 @@
             Deposit due in xx days for work to start
           </p>
           <div
-            class="
-              d-flex
-              align-items-center
-              justify-content-between justify-content-md-end
-              mt-4
-            "
+            class="d-flex align-items-center justify-content-between justify-content-md-end mt-4"
           >
             <p class="h5 md-h4 mb-0 font-weight-bold font-weight-md-medium">
               Remainder due on completion
