@@ -22,7 +22,7 @@
           
           <div class="mb-4">
             <p class="h5 font-weight-bold">Phone</p>
-            <p class="h5">{{ quote.customer_phone }}</p>
+            <p class="h5"><a :href="`tel:+${quote.customer_phone}`">{{ quote.customer_phone }}</a></p>
           </div>
 
           <div class="mb-4">
@@ -32,7 +32,7 @@
 
           <div>
             <p class="h5 font-weight-bold">Site address</p>
-            <p class="h5">{{ quote.site_address | emptyDash }}</p>
+            <p class="h5"><a target="_blank" :href="`https://maps.google.com/?q=${quote.site_address}`">{{ quote.site_address | emptyDash }}</a></p>
           </div>
         </b-col>
 
