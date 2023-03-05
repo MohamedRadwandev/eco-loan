@@ -20,6 +20,7 @@ import nuxt_plugin_axios_d65cf160 from 'nuxt_plugin_axios_d65cf160' // Source: .
 import nuxt_plugin_filters_98405076 from 'nuxt_plugin_filters_98405076' // Source: ..\\plugins\\filters (mode: 'all')
 import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ..\\plugins\\axios (mode: 'all')
 import nuxt_plugin_bootstrap_0e119090 from 'nuxt_plugin_bootstrap_0e119090' // Source: ..\\plugins\\bootstrap (mode: 'all')
+import nuxt_plugin_zoomImageclient_2e415df0 from 'nuxt_plugin_zoomImageclient_2e415df0' // Source: ..\\plugins\\zoomImage.client.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -239,6 +240,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_bootstrap_0e119090 === 'function') {
     await nuxt_plugin_bootstrap_0e119090(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_zoomImageclient_2e415df0 === 'function') {
+    await nuxt_plugin_zoomImageclient_2e415df0(app.context, inject)
   }
 
   // Lock enablePreview in context

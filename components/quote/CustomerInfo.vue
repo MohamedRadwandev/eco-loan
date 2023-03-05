@@ -19,7 +19,6 @@
             </div>
           </div>
 
-          
           <div class="mb-4">
             <p class="h5 font-weight-bold">Phone</p>
             <p class="h5"><a :href="`tel:+${quote.customer_phone}`">{{ quote.customer_phone }}</a></p>

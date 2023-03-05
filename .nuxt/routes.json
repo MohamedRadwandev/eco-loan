@@ -3,18 +3,21 @@
     "name": "Job",
     "path": "/Job",
     "component": "D:\\\\october\\\\eco-loan\\\\pages\\\\Job.vue",
-    "chunkName": "pages/Job"
+    "chunkName": "pages/Job",
+    "_name": "_dcd072de"
   },
   {
     "name": "Plan",
     "path": "/Plan",
     "component": "D:\\\\october\\\\eco-loan\\\\pages\\\\Plan.vue",
-    "chunkName": "pages/Plan"
+    "chunkName": "pages/Plan",
+    "_name": "_73a5ba05"
   },
   {
     "name": "index",
     "path": "/",
     "component": "D:\\\\october\\\\eco-loan\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_42683b74"
   }
 ]

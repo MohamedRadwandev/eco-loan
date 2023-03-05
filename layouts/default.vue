@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
+    <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
       <b-container>
         <b-navbar-brand href="#" class="flex-grow-1">
           <img src="~/static/imgs/logo.png" alt="Logo" />
@@ -14,7 +14,9 @@
       </b-container>
     </b-navbar>
 
+    <div class="mt-5">
     <nuxt />
+    </div>
 
     <footer class="footer pt-3 mt-5 bg-dark text-white">
       <b-container>
