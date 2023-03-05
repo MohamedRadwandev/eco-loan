@@ -107,3 +107,8 @@ table thead th {
     text-align: center !important;
   }
 }
+
+
+.viewer-one-to-one, .viewer-reset, .viewer-prev, .viewer-play, .viewer-large, .viewer-next, .viewer-rotate-left, .viewer-rotate-right, .viewer-flip-horizontal, .viewer-flip-vertical {
+  display: none !important;
+}
