@@ -1,11 +1,11 @@
-export { default as JobCustomerInfo } from '../../components/job/CustomerInfo.vue'
-export { default as JobNotes } from '../../components/job/Notes.vue'
-export { default as JobQuoteItems } from '../../components/job/QuoteItems.vue'
-export { default as JobSitePlan } from '../../components/job/SitePlan.vue'
-export { default as QuoteCustomerInfo } from '../../components/quote/CustomerInfo.vue'
-export { default as QuoteCustomerNotes } from '../../components/quote/CustomerNotes.vue'
-export { default as QuotePricing } from '../../components/quote/Pricing.vue'
-export { default as QuoteTerms } from '../../components/quote/Terms.vue'
+export const JobCustomerInfo = () => import('../../components/job/CustomerInfo.vue' /* webpackChunkName: "components/job-customer-info" */).then(c => wrapFunctional(c.default || c))
+export const JobNotes = () => import('../../components/job/Notes.vue' /* webpackChunkName: "components/job-notes" */).then(c => wrapFunctional(c.default || c))
+export const JobQuoteItems = () => import('../../components/job/QuoteItems.vue' /* webpackChunkName: "components/job-quote-items" */).then(c => wrapFunctional(c.default || c))
+export const JobSitePlan = () => import('../../components/job/SitePlan.vue' /* webpackChunkName: "components/job-site-plan" */).then(c => wrapFunctional(c.default || c))
+export const QuoteCustomerInfo = () => import('../../components/quote/CustomerInfo.vue' /* webpackChunkName: "components/quote-customer-info" */).then(c => wrapFunctional(c.default || c))
+export const QuoteCustomerNotes = () => import('../../components/quote/CustomerNotes.vue' /* webpackChunkName: "components/quote-customer-notes" */).then(c => wrapFunctional(c.default || c))
+export const QuotePricing = () => import('../../components/quote/Pricing.vue' /* webpackChunkName: "components/quote-pricing" */).then(c => wrapFunctional(c.default || c))
+export const QuoteTerms = () => import('../../components/quote/Terms.vue' /* webpackChunkName: "components/quote-terms" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
