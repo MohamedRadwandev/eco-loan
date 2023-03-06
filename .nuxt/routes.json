@@ -3,18 +3,21 @@
     "name": "Job",
     "path": "/Job",
     "component": "/home/bo2la/EcoLoan/pages/Job.vue",
-    "chunkName": "pages/Job"
+    "chunkName": "pages/Job",
+    "_name": "_1672c210"
   },
   {
     "name": "Plan",
     "path": "/Plan",
     "component": "/home/bo2la/EcoLoan/pages/Plan.vue",
-    "chunkName": "pages/Plan"
+    "chunkName": "pages/Plan",
+    "_name": "_ebaba334"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/bo2la/EcoLoan/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_ce540bf6"
   }
 ]
