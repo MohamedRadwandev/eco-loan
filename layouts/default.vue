@@ -9,7 +9,7 @@
 
         <b-navbar-nav class="ml-lg-auto flex-grow-1 flex-lg-grow-0">
           <!-- <b-btn variant="outline-white" class="mr-lg-4 my-3 my-lg-0 px-5">REQUEST FINANCE</b-btn> -->
-          <b-btn variant="success" class="px-5 mb-3 mb-md-0">PAY DEPOSIT</b-btn>
+          <!-- <b-btn variant="success" class="px-5 mb-3 mb-md-0">PAY DEPOSIT</b-btn> -->
         </b-navbar-nav>
       </b-container>
     </b-navbar>
