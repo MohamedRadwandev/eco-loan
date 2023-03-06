@@ -2,22 +2,22 @@
   {
     "name": "Job",
     "path": "/Job",
-    "component": "D:\\\\october\\\\eco-loan\\\\pages\\\\Job.vue",
+    "component": "/home/bo2la/EcoLoan/pages/Job.vue",
     "chunkName": "pages/Job",
-    "_name": "_dcd072de"
+    "_name": "_1672c210"
   },
   {
     "name": "Plan",
     "path": "/Plan",
-    "component": "D:\\\\october\\\\eco-loan\\\\pages\\\\Plan.vue",
+    "component": "/home/bo2la/EcoLoan/pages/Plan.vue",
     "chunkName": "pages/Plan",
-    "_name": "_73a5ba05"
+    "_name": "_ebaba334"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\october\\\\eco-loan\\\\pages\\\\index.vue",
+    "component": "/home/bo2la/EcoLoan/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_42683b74"
+    "_name": "_ce540bf6"
   }
 ]
