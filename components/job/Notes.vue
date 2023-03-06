@@ -132,6 +132,31 @@
           </div>
         </b-card>
       </b-col>
+
+      <b-col cols="12" md="6" class="mt-5 d-flex flex-column">
+        <p class="h4 font-weight-bold mb-3">Access</p>
+
+        <b-card
+          class="h5 rounded-sm pt-3 pb-4  flex-grow-1"
+          bg-variant="gray-400"
+          border-variant="gray-400"
+        >
+          <div class="d-flex flex-column" style="gap: 24px">
+            <div class="d-flex align-items-center">
+              <b-icon icon="x-square" font-scale="1.7"></b-icon>
+              <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
+               conveyors
+              </p>
+            </div>
+            <div class="d-flex align-items-center">
+              <b-icon icon="check-circle" font-scale="1.7"></b-icon>
+              <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
+               protective floor covering
+              </p>
+            </div>
+          </div>
+        </b-card>
+      </b-col>
     </b-row>
   </b-container>
 </template>
