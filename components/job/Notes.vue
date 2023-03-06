@@ -44,12 +44,6 @@
         >
           <div class="d-flex flex-column" style="gap: 24px">
             <div class="d-flex align-items-center">
-              <b-icon icon="x-square" font-scale="1.7"></b-icon>
-              <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
-                Hiace and Dyna Vans
-              </p>
-            </div>
-            <div class="d-flex align-items-center">
               <b-icon icon="check-circle" font-scale="1.7"></b-icon>
               <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
                 Service Truck
@@ -80,12 +74,6 @@
         >
           <div class="d-flex flex-column" style="gap: 24px">
             <div class="d-flex align-items-center">
-              <b-icon icon="x-square" font-scale="1.7"></b-icon>
-              <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
-               A Timber toolkit
-              </p>
-            </div>
-            <div class="d-flex align-items-center">
               <b-icon icon="check-circle" font-scale="1.7"></b-icon>
               <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
                A turf installer toolkit
@@ -110,12 +98,6 @@
           border-variant="gray-400"
         >
           <div class="d-flex flex-column" style="gap: 24px">
-            <div class="d-flex align-items-center">
-              <b-icon icon="x-square" font-scale="1.7"></b-icon>
-              <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
-               Mini-loader
-              </p>
-            </div>
             <div class="d-flex align-items-center">
               <b-icon icon="check-circle" font-scale="1.7"></b-icon>
               <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
@@ -142,12 +124,6 @@
           border-variant="gray-400"
         >
           <div class="d-flex flex-column" style="gap: 24px">
-            <div class="d-flex align-items-center">
-              <b-icon icon="x-square" font-scale="1.7"></b-icon>
-              <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
-               conveyors
-              </p>
-            </div>
             <div class="d-flex align-items-center">
               <b-icon icon="check-circle" font-scale="1.7"></b-icon>
               <p class="mb-0 ml-3 h5 font-weight-bold text-uppercase">
