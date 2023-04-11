@@ -12,7 +12,7 @@
       <b-container>
         <p class="h3 font-weight-bold my-5">Plans</p>
         <div class="text-center">
-          <b-img src="~/static/imgs/plan-2.png" alt="Plan" fluid></b-img>
+          <ProductContainer :image="image"/>
         </div>
       </b-container>
     </div>
@@ -51,5 +51,16 @@
 </template>
 
 <script>
-export default {};
+import ProductContainer from '../components/ProductContainer.vue'
+export default {
+  components:{
+    ProductContainer
+  },
+  data(){
+    return {
+      image:"../static/imgs/plan.png"
+    }
+  }
+}
 </script>
+
