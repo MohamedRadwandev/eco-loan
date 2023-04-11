@@ -4,9 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _7cd49b80 = () => interopDefault(import('../pages/Job.vue' /* webpackChunkName: "pages/Job" */))
-const _1ff8fa14 = () => interopDefault(import('../pages/Plan.vue' /* webpackChunkName: "pages/Plan" */))
-const _23b19116 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _b57407b6 = () => interopDefault(import('..\\pages\\Job.vue' /* webpackChunkName: "pages/Job" */))
+const _5483921e = () => interopDefault(import('..\\pages\\Plan.vue' /* webpackChunkName: "pages/Plan" */))
+const _ce122334 = () => interopDefault(import('..\\pages\\quote\\_id.vue' /* webpackChunkName: "pages/quote/_id" */))
+const _f4576b0a = () => interopDefault(import('..\\pages\\_index.vue' /* webpackChunkName: "pages/_index" */))
 
 const emptyFn = () => {}
 
@@ -21,15 +22,19 @@ export const routerOptions = {
 
   routes: [{
     path: "/Job",
-    component: _7cd49b80,
+    component: _b57407b6,
     name: "Job"
   }, {
     path: "/Plan",
-    component: _1ff8fa14,
+    component: _5483921e,
     name: "Plan"
   }, {
-    path: "/",
-    component: _23b19116,
+    path: "/quote/:id?",
+    component: _ce122334,
+    name: "quote-id"
+  }, {
+    path: "/:index",
+    component: _f4576b0a,
     name: "index"
   }],
 

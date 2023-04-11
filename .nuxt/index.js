@@ -13,14 +13,14 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_73b56c1a from 'nuxt_plugin_plugin_73b56c1a' // Source: ./components/plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_44a7ceb8 from 'nuxt_plugin_bootstrapvue_44a7ceb8' // Source: ./bootstrap-vue.js (mode: 'all')
-import nuxt_plugin_cookieuniversalnuxt_24b7f731 from 'nuxt_plugin_cookieuniversalnuxt_24b7f731' // Source: ./cookie-universal-nuxt.js (mode: 'all')
-import nuxt_plugin_axios_a5eeecee from 'nuxt_plugin_axios_a5eeecee' // Source: ./axios.js (mode: 'all')
-import nuxt_plugin_filters_98405076 from 'nuxt_plugin_filters_98405076' // Source: ../plugins/filters (mode: 'all')
-import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ../plugins/axios (mode: 'all')
-import nuxt_plugin_bootstrap_0e119090 from 'nuxt_plugin_bootstrap_0e119090' // Source: ../plugins/bootstrap (mode: 'all')
-import nuxt_plugin_zoomImageclient_2e415df0 from 'nuxt_plugin_zoomImageclient_2e415df0' // Source: ../plugins/zoomImage.client.js (mode: 'client')
+import nuxt_plugin_plugin_3eba5f16 from 'nuxt_plugin_plugin_3eba5f16' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_4b96d247 from 'nuxt_plugin_bootstrapvue_4b96d247' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_cookieuniversalnuxt_6c2dfbc0 from 'nuxt_plugin_cookieuniversalnuxt_6c2dfbc0' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
+import nuxt_plugin_axios_1fdf8c18 from 'nuxt_plugin_axios_1fdf8c18' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_filters_98405076 from 'nuxt_plugin_filters_98405076' // Source: ..\\plugins\\filters (mode: 'all')
+import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ..\\plugins\\axios (mode: 'all')
+import nuxt_plugin_bootstrap_0e119090 from 'nuxt_plugin_bootstrap_0e119090' // Source: ..\\plugins\\bootstrap (mode: 'all')
+import nuxt_plugin_vueZoomer_361661c7 from 'nuxt_plugin_vueZoomer_361661c7' // Source: ..\\plugins\\vueZoomer.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -49,7 +49,7 @@ Vue.component(Nuxt.name, Nuxt)
 
 Object.defineProperty(Vue.prototype, '$nuxt', {
   get() {
-    const globalNuxt = this.$root.$options.$nuxt
+    const globalNuxt = this.$root ? this.$root.$options.$nuxt : null
     if (process.client && !globalNuxt && typeof window !== 'undefined') {
       return window.$nuxt
     }
@@ -74,9 +74,9 @@ function registerModule (path, rawModule, options = {}) {
 }
 
 async function createApp(ssrContext, config = {}) {
-  const router = await createRouter(ssrContext, config)
-
   const store = createStore(ssrContext)
+  const router = await createRouter(ssrContext, config, { store })
+
   // Add this.$router into store actions/mutations
   store.$router = router
 
@@ -155,6 +155,7 @@ async function createApp(ssrContext, config = {}) {
     req: ssrContext ? ssrContext.req : undefined,
     res: ssrContext ? ssrContext.res : undefined,
     beforeRenderFns: ssrContext ? ssrContext.beforeRenderFns : undefined,
+    beforeSerializeFns: ssrContext ? ssrContext.beforeSerializeFns : undefined,
     ssrContext
   })
 
@@ -214,20 +215,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_73b56c1a === 'function') {
-    await nuxt_plugin_plugin_73b56c1a(app.context, inject)
+  if (typeof nuxt_plugin_plugin_3eba5f16 === 'function') {
+    await nuxt_plugin_plugin_3eba5f16(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_44a7ceb8 === 'function') {
-    await nuxt_plugin_bootstrapvue_44a7ceb8(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_4b96d247 === 'function') {
+    await nuxt_plugin_bootstrapvue_4b96d247(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_cookieuniversalnuxt_24b7f731 === 'function') {
-    await nuxt_plugin_cookieuniversalnuxt_24b7f731(app.context, inject)
+  if (typeof nuxt_plugin_cookieuniversalnuxt_6c2dfbc0 === 'function') {
+    await nuxt_plugin_cookieuniversalnuxt_6c2dfbc0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_a5eeecee === 'function') {
-    await nuxt_plugin_axios_a5eeecee(app.context, inject)
+  if (typeof nuxt_plugin_axios_1fdf8c18 === 'function') {
+    await nuxt_plugin_axios_1fdf8c18(app.context, inject)
   }
 
   if (typeof nuxt_plugin_filters_98405076 === 'function') {
@@ -242,8 +243,8 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_bootstrap_0e119090(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_zoomImageclient_2e415df0 === 'function') {
-    await nuxt_plugin_zoomImageclient_2e415df0(app.context, inject)
+  if (typeof nuxt_plugin_vueZoomer_361661c7 === 'function') {
+    await nuxt_plugin_vueZoomer_361661c7(app.context, inject)
   }
 
   // Lock enablePreview in context
