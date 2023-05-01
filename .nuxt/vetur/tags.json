@@ -1,4 +1,7 @@
 {
+  "ProductContainer": {
+    "description": "Auto imported from components/ProductContainer.vue"
+  },
   "JobCustomerInfo": {
     "description": "Auto imported from components/job/CustomerInfo.vue"
   },
@@ -19,6 +22,12 @@
   },
   "QuotePricing": {
     "description": "Auto imported from components/quote/Pricing.vue"
+  },
+  "QuoteButton": {
+    "description": "Auto imported from components/quote/QuoteButton.vue"
+  },
+  "QuoteStatus": {
+    "description": "Auto imported from components/quote/QuoteStatus.vue"
   },
   "QuoteTerms": {
     "description": "Auto imported from components/quote/Terms.vue"

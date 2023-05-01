@@ -1,23 +1,38 @@
 [
   {
+    "name": "fail",
+    "path": "/fail",
+    "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\fail.vue",
+    "chunkName": "pages/fail"
+  },
+  {
     "name": "Job",
     "path": "/Job",
-    "component": "/home/bo2la/ECO/pages/Job.vue",
-    "chunkName": "pages/Job",
-    "_name": "_7cd49b80"
+    "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\Job.vue",
+    "chunkName": "pages/Job"
   },
   {
     "name": "Plan",
     "path": "/Plan",
-    "component": "/home/bo2la/ECO/pages/Plan.vue",
-    "chunkName": "pages/Plan",
-    "_name": "_1ff8fa14"
+    "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\Plan.vue",
+    "chunkName": "pages/Plan"
+  },
+  {
+    "name": "success",
+    "path": "/success",
+    "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\success.vue",
+    "chunkName": "pages/success"
+  },
+  {
+    "name": "quote-id",
+    "path": "/quote/:id?",
+    "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\quote\\\\_id.vue",
+    "chunkName": "pages/quote/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/bo2la/ECO/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_23b19116"
+    "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]

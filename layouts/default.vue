@@ -9,7 +9,7 @@
 
         <b-navbar-nav class="ml-lg-auto flex-grow-1 flex-lg-grow-0">
           <!-- <b-btn variant="outline-white" class="mr-lg-4 my-3 my-lg-0 px-5">REQUEST FINANCE</b-btn> -->
-          <!-- <b-btn variant="success" class="px-5 mb-3 mb-md-0">PAY DEPOSIT</b-btn> -->
+          <QuoteButton  />
         </b-navbar-nav>
       </b-container>
     </b-navbar>
@@ -74,7 +74,7 @@
                   Mon-Fri, 9AM to 5PM
                 </p>
               </div>
-              
+
               <div class="d-flex">
                 <b-icon icon="envelope-fill" variant="white"></b-icon>
                 <a href="mailto:care@ecolawn.nz" class="ml-3 text-success h6 md-h5" style="line-height: 15px;">care@ecolawn.nz</a>
@@ -102,9 +102,14 @@
         <b-container class="d-flex align-items-center">
           <b-icon icon="exclamation-circle-fill" font-scale="1.8"></b-icon>
 
-          <p class="mb-0 ml-4 h6 line-height-sm">
+          <!-- <p class="mb-0 ml-4 h6 line-height-sm">
             The intended recipient of this Job Brief agrees that the content and pricing of this contract is commercially sensitive and that they, therefore, agree to keep the information entirely confidential, under all circumstances and agree they will not share this information with any third party whatsoever
+          </p> -->
+          <p class="mb-0 ml-4 h6 line-height-sm">
+            The intended recipient of this quote agrees that the content and pricing of this contract is commercially sensitive and that they, therefore, agree to keep the information entirely confidential, even in circumstances where the tender is not accepted! And agree they will not share this information with any third party whatsoever”
+
           </p>
+
         </b-container>
       </div>
     </footer>
@@ -113,4 +118,10 @@
 
 
 <script>
+import QuoteButton from '../components/quote/QuoteButton.vue'
+export default {
+  components:{
+    QuoteButton
+  }
+}
 </script>

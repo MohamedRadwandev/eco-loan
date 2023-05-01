@@ -32,12 +32,13 @@ export default {
     'viewerjs/dist/viewer.css'
   ],
 
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/filters',
     '~/plugins/axios',
     '~/plugins/bootstrap',
-    {src: '~/plugins/zoomImage.client.js', mode: 'client', ssr: false},
+    '~/plugins/vueZoomer.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -64,5 +65,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  transpile: ['vue-image-zoomer'],
+
   }
 }

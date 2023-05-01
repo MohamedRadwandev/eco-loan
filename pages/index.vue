@@ -1,9 +1,12 @@
 <template>
   <div>
     <QuoteCustomerInfo />
+    <QuoteStatus status="fully paid"/>
+
     <QuotePricing />
     <QuoteCustomerNotes />
     <QuoteTerms />
+
   </div>
 </template>
 
@@ -18,7 +21,7 @@ export default {
     })
 
     const {access_token} = data
-   
+
    const response = await $axios.get(
       "quotes/e129d7ca-363c-11ed-9a2d-00163edf12f7",
       {
