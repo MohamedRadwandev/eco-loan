@@ -7,6 +7,7 @@ export { default as QuoteCustomerInfo } from '../..\\components\\quote\\Customer
 export { default as QuoteCustomerNotes } from '../..\\components\\quote\\CustomerNotes.vue'
 export { default as QuotePricing } from '../..\\components\\quote\\Pricing.vue'
 export { default as QuoteButton } from '../..\\components\\quote\\QuoteButton.vue'
+export { default as QuoteStatus } from '../..\\components\\quote\\QuoteStatus.vue'
 export { default as QuoteTerms } from '../..\\components\\quote\\Terms.vue'
 
 // nuxt/nuxt.js#8607

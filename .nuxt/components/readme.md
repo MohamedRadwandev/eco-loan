@@ -15,4 +15,5 @@ You can directly use them in pages and other components without the need to impo
 - `<QuoteCustomerNotes>` | `<quote-customer-notes>` (components/quote/CustomerNotes.vue)
 - `<QuotePricing>` | `<quote-pricing>` (components/quote/Pricing.vue)
 - `<QuoteButton>` | `<quote-button>` (components/quote/QuoteButton.vue)
+- `<QuoteStatus>` | `<quote-status>` (components/quote/QuoteStatus.vue)
 - `<QuoteTerms>` | `<quote-terms>` (components/quote/Terms.vue)

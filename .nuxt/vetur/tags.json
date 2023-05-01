@@ -26,6 +26,9 @@
   "QuoteButton": {
     "description": "Auto imported from components/quote/QuoteButton.vue"
   },
+  "QuoteStatus": {
+    "description": "Auto imported from components/quote/QuoteStatus.vue"
+  },
   "QuoteTerms": {
     "description": "Auto imported from components/quote/Terms.vue"
   }
