@@ -9,7 +9,7 @@
 
         <b-navbar-nav class="ml-lg-auto flex-grow-1 flex-lg-grow-0">
           <!-- <b-btn variant="outline-white" class="mr-lg-4 my-3 my-lg-0 px-5">REQUEST FINANCE</b-btn> -->
-          <QuoteButton  />
+          <QuoteButton  v-if="!$route.path.includes('job')"/>
         </b-navbar-nav>
       </b-container>
     </b-navbar>
@@ -106,7 +106,7 @@
             The intended recipient of this Job Brief agrees that the content and pricing of this contract is commercially sensitive and that they, therefore, agree to keep the information entirely confidential, under all circumstances and agree they will not share this information with any third party whatsoever
           </p> -->
           <p class="mb-0 ml-4 h6 line-height-sm">
-            The intended recipient of this quote agrees that the content and pricing of this contract is commercially sensitive and that they, therefore, agree to keep the information entirely confidential, even in circumstances where the tender is not accepted! And agree they will not share this information with any third party whatsoever”
+            The intended recipient of this {{FooterText}} agrees that the content and pricing of this contract is commercially sensitive and that they, therefore, agree to keep the information entirely confidential, even in circumstances where the tender is not accepted! And agree they will not share this information with any third party whatsoever”
 
           </p>
 
@@ -122,6 +122,14 @@ import QuoteButton from '../components/quote/QuoteButton.vue'
 export default {
   components:{
     QuoteButton
+  },
+  computed:{
+    FooterText(){
+      return this.$route.path.includes('job')?'job':'quote'
+    }
+  },
+  mounted(){
+    console.log(this.$route)
   }
 }
 </script>

@@ -1,8 +1,7 @@
 <template>
   <div>
     <QuoteCustomerInfo />
-    <QuoteStatus status="fully paid"/>
-
+    <!-- <QuoteStatus status="fully paid"/> -->
     <QuotePricing />
     <QuoteCustomerNotes />
     <QuoteTerms />

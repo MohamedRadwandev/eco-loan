@@ -1,8 +1,7 @@
 <template>
-<div>
-  <b-btn :variant="statusColor[status]" class="px-2 mb-3 mb-md-0 ml-5"  target="_blank">{{ status }}</b-btn>
-
-</div>
+<b-container class="pt-2">
+  <b-btn :variant="statusColor[status]" class="px-2 mb-3 mb-md-0"  target="_blank">{{ status }}</b-btn>
+</b-container>
 </template>
 
 <script>

@@ -26,14 +26,14 @@
           ></b-icon>
         </b-btn>
       </template>
-      <template #head(total_amount)>
+      <!-- <template #head(total_amount)>
         <div class="text-nowrap text-right">
           Total
           <span class="h6 text-muted text-transform-none font-weight-normal"
             >(inc GST)</span
           >
         </div>
-      </template>
+      </template> -->
 
       <template #cell(name)="row">
         <div v-if="row.item.name">
@@ -48,8 +48,8 @@
           </div>
 
           <div class="h5 mt-2 d-none d-md-block" v-if="row.item._showDetails">
-          
-            <b-row>
+
+            <!-- <b-row>
               <b-col cols="12" md="4" class="mb-4 mb-md-0">
                 <b-img
                   src="~/static/imgs/eco-prime.png"
@@ -74,9 +74,9 @@
                 ></b-img>
                 <p class="h5 font-weight-bold mt-3">Cross section example</p>
               </b-col>
-            </b-row>
+            </b-row> -->
 
-            <!-- {{ row.item.description }} -->
+            {{ row.item.description }}
             <br />
             <b-btn variant="primary" class="mt-3" @click="$router.push('/plan')">Click to enlarge </b-btn>
           </div>
@@ -123,10 +123,14 @@
         text-tag="div"
         class="py-3 d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row"
       >
-        <b-btn variant="success" class="px-5 w-100 w-md-auto"
+        <!-- <b-btn variant="success" class="px-5 w-100 w-md-auto"
           >VIEW PLAN HERE</b-btn
+        > -->
+        <img
+          src="~/static/imgs/soft-fall.png"
+          style="object-fit: contain; width: 230px; height: 100%;cursor:pointer"
+          @click="$router.push('/plan')"
         >
-
         <div
           class="d-flex align-items-start align-items-md-start flex-column flex-md-row mt-3 mt-md-0"
         >
