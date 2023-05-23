@@ -9,9 +9,9 @@
       </b-container>
     </b-navbar>
     <div class="py-5 bg-green-400">
-      <b-container>
+      <b-container class="">
         <p class="h3 font-weight-bold my-5">Plans</p>
-        <div class="text-center" v-b-modal.modal1>
+        <div class="text-center "  style="height:500px" v-b-modal.modal1>
           <ProductContainer :image="image"/>
         </div>
       </b-container>
@@ -19,10 +19,10 @@
     <div>
     <!-- <b-button >Launch demo modal</b-button> -->
 
-    <b-modal id="modal1"  content-class="p-0" modal-class="w-100" ok-only="false" cancel-only="false" hide-footer>
-      <div class="p-0" >
-        <ProductContainer :image="image"/>
-      </div>
+    <b-modal id="modal1"  content-class="p-0" modal-class="full-screen" ok-only="false" cancel-only="false" hide-footer>
+      <!-- <div class="p-0" > -->
+        <ProductContainer style="" :image="image"/>
+      <!-- </div> -->
     </b-modal>
   </div>
     <b-container>
@@ -73,8 +73,14 @@ export default {
 </script>
 
 <style>
-.w-100 .modal-dialog {
-  max-width: 90%;
-  padding-top:150px
+
+.full-screen .modal-dialog {
+  max-width: 100%;
+  height: 100%;
+  padding:24px
+}
+
+.full-screen .modal-dialog .modal-content {
+  height: 100%
 }
 </style>

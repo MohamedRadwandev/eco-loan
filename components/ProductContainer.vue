@@ -1,5 +1,5 @@
 <template>
-  <v-zoomer style="width: 100%; height: 500px; border: solid 1px silver;">
+  <v-zoomer style="width: 100%; height: 100%; border: solid 1px silver;">
   <img
     :src="image"
     style="object-fit: contain; width: 100%; height: 100%;"
