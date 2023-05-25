@@ -12,17 +12,19 @@
       <b-container class="">
         <p class="h3 font-weight-bold my-5">Plans</p>
         <div class="text-center "  style="height:500px" v-b-modal.modal1>
-          <ProductContainer :image="image"/>
+          <!-- <ProductContainer :image="image"/> -->
+        <img :src="image" alt="" style="height:100%">
+
         </div>
       </b-container>
     </div>
     <div>
     <!-- <b-button >Launch demo modal</b-button> -->
 
-    <b-modal id="modal1"  content-class="p-0" modal-class="full-screen" ok-only="false" cancel-only="false" hide-footer>
-      <!-- <div class="p-0" > -->
-        <ProductContainer style="" :image="image"/>
-      <!-- </div> -->
+    <b-modal id="modal1"  style="height:500px" content-class="p-0" modal-class="full-screen" ok-only="false" cancel-only="false" hide-footer>
+      <div class="p-0" >
+        <ProductContainer  :image="image"/>
+      </div>
     </b-modal>
   </div>
     <b-container>
@@ -54,19 +56,19 @@ export default {
       products:[
         {
           name:'ECO PRIME 40',
-          image:"../static/imgs/soft-fall.png",
+          image:"https://ecolawn.mohamedradwan.me/imgs/soft-fall.png",
 
         },
         {
           name:'SOFT FALL 15MM',
-          image:'../static/imgs/soft-fall.png',
+          image:'https://ecolawn.mohamedradwan.me/imgs/soft-fall.png',
         },
         {
           name:'Cross section example',
-          image:'../static/imgs/cross-section.png'
+          image:'https://ecolawn.mohamedradwan.me/imgs/cross-section.png'
         },
       ],
-      image:"../static/imgs/plan.png"
+      image:"https://ecolawn.mohamedradwan.me/imgs/plan.png"
     }
   }
 }

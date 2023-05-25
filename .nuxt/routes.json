@@ -3,36 +3,42 @@
     "name": "fail",
     "path": "/fail",
     "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\fail.vue",
-    "chunkName": "pages/fail"
+    "chunkName": "pages/fail",
+    "_name": "_ea83c774"
   },
   {
     "name": "Job",
     "path": "/Job",
     "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\Job.vue",
-    "chunkName": "pages/Job"
+    "chunkName": "pages/Job",
+    "_name": "_b57407b6"
   },
   {
     "name": "Plan",
     "path": "/Plan",
     "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\Plan.vue",
-    "chunkName": "pages/Plan"
+    "chunkName": "pages/Plan",
+    "_name": "_5483921e"
   },
   {
     "name": "success",
     "path": "/success",
     "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\success.vue",
-    "chunkName": "pages/success"
+    "chunkName": "pages/success",
+    "_name": "_7e55bd8b"
   },
   {
     "name": "quote-id",
     "path": "/quote/:id?",
     "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\quote\\\\_id.vue",
-    "chunkName": "pages/quote/_id"
+    "chunkName": "pages/quote/_id",
+    "_name": "_ce122334"
   },
   {
     "name": "index",
     "path": "/",
     "component": "G:\\\\Vue\\\\Nuxt\\\\ECO-LAWN\\\\eco-loan\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_8079fa4c"
   }
 ]
