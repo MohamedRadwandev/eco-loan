@@ -68,7 +68,7 @@ export default {
           image:'https://ecolawn.mohamedradwan.me/imgs/cross-section.png'
         },
       ],
-      image:"https://ecolawn.mohamedradwan.me/imgs/plan-modified.png"
+      image:"https://ecolawn.mohamedradwan.me/imgs/plan-2.png"
     }
   }
 }
