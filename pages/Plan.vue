@@ -11,9 +11,9 @@
     <div class="py-5 bg-green-400">
       <b-container class="">
         <p class="h3 font-weight-bold my-5">Plans</p>
-        <div class="text-center "  style="height:500px" v-b-modal.modal1>
+        <div class="text-center " v-b-modal.modal1>
           <!-- <ProductContainer :image="image"/> -->
-        <img :src="image" alt="" style="height:100%">
+        <img :src="image" alt="" >
 
         </div>
       </b-container>
@@ -68,7 +68,7 @@ export default {
           image:'https://ecolawn.mohamedradwan.me/imgs/cross-section.png'
         },
       ],
-      image:"https://ecolawn.mohamedradwan.me/imgs/plan.png"
+      image:"https://ecolawn.mohamedradwan.me/imgs/plan-modified.png"
     }
   }
 }
