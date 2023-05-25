@@ -24,8 +24,9 @@
     <b-modal id="modal1"  style="height:500px" content-class="p-0" modal-class="full-screen" ok-only="false" cancel-only="false" hide-footer>
       <div class="p-0" >
         <!-- <ProductContainer  :image="image" style="height:100%"/> -->
-        <img :src="image" alt="" >
-
+        <b-container fluid="sm" >
+          <img :src="image" style="width:100%" alt="" >
+        </b-container>
       </div>
     </b-modal>
   </div>
