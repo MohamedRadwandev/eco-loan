@@ -127,7 +127,7 @@
           >VIEW PLAN HERE</b-btn
         > -->
         <img
-          src="~/static/imgs/soft-fall.png"
+          src="https://ecolawn.mohamedradwan.me/imgs/soft-fall.png"
           style="object-fit: contain; width: 230px; height: 100%;cursor:pointer"
           @click="$router.push('/plan')"
         >

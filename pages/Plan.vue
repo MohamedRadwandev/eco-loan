@@ -54,19 +54,19 @@ export default {
       products:[
         {
           name:'ECO PRIME 40',
-          image:"../static/imgs/soft-fall.png",
+          image:`https://ecolawn.mohamedradwan.me/imgs/soft-fall.png`,
 
         },
         {
           name:'SOFT FALL 15MM',
-          image:'../static/imgs/soft-fall.png',
+          image:`https://ecolawn.mohamedradwan.me/imgs/soft-fall.png`,
         },
         {
           name:'Cross section example',
-          image:'../static/imgs/cross-section.png'
+          image:`https://ecolawn.mohamedradwan.me/imgs/cross-section.png`
         },
       ],
-      image:"../static/imgs/plan.png"
+      image:`https://ecolawn.mohamedradwan.me/imgs/plan.png`
     }
   }
 }
