@@ -22,12 +22,15 @@
     <!-- <b-button >Launch demo modal</b-button> -->
 
     <b-modal id="modal1"  style="height:500px" content-class="p-0" modal-class="full-screen" ok-only="false" cancel-only="false" hide-footer>
-      <div class="p-0" >
+      <!-- <div class="p-0" > -->
         <!-- <ProductContainer  :image="image" style="height:100%"/> -->
-        <b-container fluid="sm" >
-          <img :src="image" style="width:100%" alt="" >
-        </b-container>
-      </div>
+        <!-- <b-container  > -->
+          <b-col col="12">
+          <b-img :src="image" fluid-grow class="" alt="" ></b-img>
+
+          </b-col>
+        <!-- </b-container> -->
+      <!-- </div> -->
     </b-modal>
   </div>
     <b-container>
@@ -87,5 +90,6 @@ export default {
 
 .full-screen .modal-dialog .modal-content {
   /* height: 100% */
-}
+  /* width:100vw */
+  }
 </style>
