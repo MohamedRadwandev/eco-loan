@@ -8,16 +8,19 @@
         </b-button>
       </b-container>
     </b-navbar>
-    <div class="py-5 bg-green-400">
+    <!-- <div class="py-5 bg-green-400" > -->
       <b-container class="">
         <p class="h3 font-weight-bold my-5">Plans</p>
-        <div class="text-center " v-b-modal.modal1>
+        <b-row>
+          <b-col cols="12">
+            <div class="text-center " v-b-modal.modal1>
           <!-- <ProductContainer :image="image"/> -->
-        <img :src="image" alt="" >
-
-        </div>
+              <img :src="image" fluid-grow alt="" style="max-width:100%">
+            </div>
+          </b-col>
+        </b-row>
       </b-container>
-    </div>
+    <!-- </div> -->
     <div>
     <!-- <b-button >Launch demo modal</b-button> -->
 
@@ -26,7 +29,7 @@
         <!-- <ProductContainer  :image="image" style="height:100%"/> -->
         <!-- <b-container  > -->
           <b-col col="12">
-          <b-img :src="image" fluid-grow class="" alt="" ></b-img>
+          <b-img :src="image" fluid-grow class="" alt="" style="width:100%"></b-img>
 
           </b-col>
         <!-- </b-container> -->
