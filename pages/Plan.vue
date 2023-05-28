@@ -28,8 +28,8 @@
       <!-- <div class="p-0" > -->
         <!-- <ProductContainer  :image="image" style="height:100%"/> -->
         <!-- <b-container  > -->
-          <b-col col="12">
-          <b-img :src="image" fluid-grow class="" alt="" style="width:100%"></b-img>
+          <b-col col="12" >
+          <b-img :src="image" fluid-grow class="" alt="" style="width:100%;height:100%"></b-img>
 
           </b-col>
         <!-- </b-container> -->
@@ -95,4 +95,31 @@ export default {
   /* height: 100% */
   /* width:100vw */
   }
+
+  @media (max-width: 576px) {
+    .full-screen .modal-dialog .modal-content {
+  height: 50%;
+  padding:0px;
+  margin-top:20%
+
+  /* width:100vw */
+  }
+
+  .full-screen .modal-dialog {
+  padding:0px;
+
+}
+#modal1___BV_modal_header_ {
+  padding: 0.5rem;
+}
+#modal1___BV_modal_body_{
+  display: flex ;
+  align-items: center ;
+  padding:0px;
+}
+.image-container {
+  display:flex;
+  justify-content: center;
+}
+}
 </style>
