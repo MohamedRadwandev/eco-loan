@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container style="max-width:100%;min-width:450px">
     <p class="h3 font-weight-bold mb-5">Next steps</p>
     <ol class="font-weight-bold h4">
       <li>

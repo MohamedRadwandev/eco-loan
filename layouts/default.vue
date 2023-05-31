@@ -14,7 +14,7 @@
       </b-container>
     </b-navbar>
 
-    <div class="mt-5">
+    <div class="mt-5 p-0">
     <nuxt />
     </div>
 

@@ -1,15 +1,18 @@
 <template>
-  <b-container class="py-5">
+  <!-- <div  style="max-width:100%"> -->
+    <b-container class="py-5" style="max-width:100%">
     <p class="h3 font-weight-bold">Cost breakdown</p>
-
-    <b-table
+    <b-row>
+      <b-col cols="12">
+        <b-table
       borderless
-      responsive
       :items="items"
       :fields="fields"
-      class="mt-4"
+      class="mt-4 my-table"
       @row-clicked="toggleCollapse"
       details-td-class="d-md-none pt-0"
+      thead-class="text-left"
+      td-class="text-left"
     >
       <template #head(name)>
         Name
@@ -116,41 +119,13 @@
           {{ row.item.description }}
         </p>
       </template>
-    </b-table>
-
-    <b-card bg-variant="green-400" border-variant="green-400" class="mt-4">
-      <b-card-text
-        text-tag="div"
-        class="py-3 d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row"
-      >
-        <!-- <b-btn variant="success" class="px-5 w-100 w-md-auto"
-          >VIEW PLAN HERE</b-btn
-        > -->
-        <img
-          src="https://ecolawn.mohamedradwan.me/imgs/plan-2.png"
-          style="object-fit: contain; width: 230px; height: 100%;cursor:pointer"
-          @click="$router.push('/plan')"
-        >
-        <div
-          class="d-flex align-items-start align-items-md-start flex-column flex-md-row mt-3 mt-md-0"
-        >
-          <p class="h4 mb-0 line-height-xl">Total amount (inc GST)</p>
-          <div>
-            <p class="font-size-24 font-weight-bold ml-md-4 mb-0">
-              {{ quote.pricing.total_amount | money }}
-            </p>
-            <p class="text-muted h6 mt-1 text-right mb-0">
-              GST included $500.50
-            </p>
-          </div>
-        </div>
-      </b-card-text>
-    </b-card>
-    <b-card
+        </b-table>
+        <b-card
       bg-variant="dark"
       border-variant="dark"
       class="rounded-0 mt-4 text-white py-0 px-0 border-0"
       body-class="p-4"
+      style="min-width:440px"
     >
       <b-row>
         <b-col cols="12" md="6">
@@ -192,6 +167,14 @@
         </b-col>
       </b-row>
     </b-card>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col cols="12">
+
+      </b-col>
+
+    </b-row>
   </b-container>
 </template>
 
@@ -214,7 +197,7 @@ export default {
           thClass: "text-center",
           tdClass: "text-center",
         },
-        { key: "total_amount", label: "total", tdClass: "text-right" },
+        { key: "total_amount", label: "total", tdClass: "text-left" },
       ],
       items: [
         {
@@ -262,5 +245,9 @@ export default {
   ::v-deep .table tbody tr:first-child {
     display: none;
   }
+}
+.my-table td {
+  white-space: normal;
+  word-break: break-word;
 }
 </style>
