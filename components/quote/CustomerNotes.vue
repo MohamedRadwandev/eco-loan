@@ -1,5 +1,5 @@
 <template>
-  <b-container style="max-width:100%;min-width:450px">
+  <b-container class="notes-container" >
     <p class="h3 font-weight-bold mb-5">Next steps</p>
     <ol class="font-weight-bold h4">
       <li>
@@ -111,5 +111,11 @@ ol li ol li:last-child {
 }
 ol li ol li {
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .notes-container {
+    max-width:100%;
+    min-width:450px;
+  }
 }
 </style>
