@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="base-container">
     <b-navbar toggleable="lg" type="dark" variant="dark" fixed="top">
       <b-container>
         <b-navbar-brand href="#" class="flex-grow-1">
@@ -134,7 +134,8 @@ export default {
 }
 </script>
 <style>
-footer{
- min-width:440px
+.base-container {
+  min-width:440px
+
 }
 </style>
