@@ -6,7 +6,9 @@ export default {
     client_id: process.env.CLIENT_ID,
     client_secret: process.env.CLIENT_SECRET,
   },
-
+  server:{
+    host: "0.0.0.0"
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Eco Lawn',
@@ -15,7 +17,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=0.7' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
