@@ -36,6 +36,13 @@ $btn-font-size:14px;
     padding-top: 18px;
   }
 }
+html {
+  min-width: 100%;
+}
+
+body {
+  min-height: 100%;
+}
 .w-65{
   width: 65%;
 }

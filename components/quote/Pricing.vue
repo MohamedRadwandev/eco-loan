@@ -1,9 +1,8 @@
 <template>
-  <!-- <div  style="max-width:100%"> -->
     <b-container class="py-5 pricing-container" >
     <p class="h3 font-weight-bold">Cost breakdown</p>
     <b-row>
-      <b-col cols="12">
+      <b-col cols="12" class="pricing-col">
         <b-table
       borderless
       :items="items"
@@ -281,11 +280,16 @@ export default {
 }
 
 @media (max-width: 767px) {
-  .pricing-container {
-    max-width: 100%;
-  }
+//   .pricing-container {
+//     max-width: 100%;
+//   }
   .plan-image{
   width:100% !important
+  }
+  .pricing-col{
+    padding-left:0px;
+    padding-right:0px;
+
   }
 }
 

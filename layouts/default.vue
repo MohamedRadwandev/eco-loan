@@ -135,7 +135,12 @@ export default {
 </script>
 <style>
 .base-container {
-  min-width:440px
-
+  /* min-width:100 */
+  /* .notes-container { */
+    max-width:100%;
+    min-width:450px;
+  /* } */
 }
 </style>
+
+
