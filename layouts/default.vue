@@ -133,3 +133,8 @@ export default {
   }
 }
 </script>
+<style>
+footer{
+ min-width:440px
+}
+</style>
